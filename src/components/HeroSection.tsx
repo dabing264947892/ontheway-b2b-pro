@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { ArrowRight, ShieldCheck, Zap } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
+import heroBg from "../../public/images/hero_bg.png";
 
 export default function HeroSection() {
     const { lang } = useLanguage();
@@ -33,7 +34,7 @@ export default function HeroSection() {
         <section className="relative pt-24 pb-16 md:pt-40 md:pb-32 overflow-hidden bg-slate-900 border-b border-white/10">
             {/* Background Image */}
             <Image
-                src="/images/hero_bg.png"
+                src={heroBg}
                 alt="B2B Travel Network"
                 fill
                 className="object-cover opacity-30 -z-10 mix-blend-overlay"

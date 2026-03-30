@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useLanguage } from "@/context/LanguageContext";
+import logoPic from "../../public/logo.png";
 
 export default function Header() {
     const { lang, toggleLang } = useLanguage();
@@ -30,10 +31,8 @@ export default function Header() {
                 {/* Logo */}
                 <Link href="/" className="flex items-center py-2 relative z-10 transition-transform hover:scale-105">
                     <Image
-                        src="/logo.png"
+                        src={logoPic}
                         alt="On The Way B2B"
-                        width={400}
-                        height={120}
                         className="h-[36px] md:h-[60px] lg:h-[70px] w-auto object-contain mix-blend-multiply"
                         unoptimized
                         priority
