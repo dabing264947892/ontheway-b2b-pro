@@ -2,19 +2,20 @@
 
 import { useLanguage } from "@/context/LanguageContext";
 import Image from "next/image";
-import brandGraphic from "../../public/images/brand_intro_graphic.png";
+
+const brandGraphic = "/ontheway-b2b-pro/images/brand_intro_v2.png";
 
 export default function BrandIntro() {
     const { lang } = useLanguage();
 
     const text = {
         EN: {
-            title: "Brand Intro",
-            copy: "On The Way Overseas serves as the group's global-facing business and partnership platform. Built on the \"Global Travel Resource Allocation Platform\" positioning, it brings together air, hotel, group travel, ground mobility and digital connectivity capabilities for international B2B cooperation. The group is technology- and operations-driven, with business support across markets including the U.S. and Hong Kong."
+            title: "Executive Summary",
+            copy: "As the group's global strategic landing point, On The Way Overseas is dedicated to building a highly competitive global resource allocation platform. We verticalize a comprehensive suite of air, hotel, ground mobility, and digital system solutions, providing international B2B partners with reliable API connectivity, full-scenario supply chain resources, and high-performance fulfillment support. Powered by technology and operations across hubs like the U.S. and Hong Kong, we enable every increment of value for our clients."
         },
         ZH: {
             title: "品牌简介",
-            copy: "在路上海外是集团全球化业务展示与合作窗口，依托“全球旅行资源配置平台”能力，聚合机票、酒店、团队票、地面交通及系统连接能力，面向国际 B2B 合作场景提供资源、系统与履约协同支持。集团具备技术和运营驱动背景，并在美国、香港等地设有业务支撑。"
+            copy: "作为在路上集团布局全球的战略枢纽，在路上海外（On The Way Overseas）致力于构建极具竞争力的全球旅行资源配置平台。我们深度垂直聚合机票、酒店、地面交通与数字化系统方案，为国际 B2B 合作伙伴提供高可靠的接口连接、全场景供应链资源及高效的履约协同支撑。依托美国、香港等地的全球化服务矩阵，我们以技术与运营双轮驱动，赋能客户每一份增量价值。"
         }
     };
     const t = text[lang];
