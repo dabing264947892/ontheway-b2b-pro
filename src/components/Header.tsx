@@ -44,7 +44,7 @@ export default function Header() {
             <div className="container mx-auto px-4 lg:px-8 h-20 md:h-24 flex items-center justify-between">
                 {/* Logo */}
                 <Link href="/" className="flex items-center relative z-10 transition-transform hover:scale-105 shrink-0">
-                    <Logo className="h-[36px] md:h-[50px] lg:h-[60px] aspect-[4.5/1]" />
+                    <Logo className="h-[36px] md:h-[50px] lg:h-[60px] w-auto" />
                 </Link>
 
                 {/* Desktop Navigation */}

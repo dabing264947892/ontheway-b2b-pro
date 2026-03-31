@@ -1,6 +1,6 @@
 export default function Logo({ className }: { className?: string }) {
     return (
-        <svg viewBox="0 0 450 100" width="450" height="100" className={className} xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+        <svg viewBox="0 0 450 100" className={className} xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
             {/* Abstract Red Wings `<` simulating airplane and compass */}
             <g fill="#E62B22">
                 {/* Main upper wing sweep */}
