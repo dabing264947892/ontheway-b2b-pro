@@ -27,7 +27,11 @@ export default function EntityCredentials() {
             usBadge2: "Florida Seller of Travel",
             usBadge2Sub: "Licensed Seller (Registration No.",
             usRoles: "Direct source for North American airlines & group tickets. Core integration hub for the Americas LCC APIs and supply matrix.",
-            roleTitle: "Core Business Role"
+            roleTitle: "Core Business Role",
+            introTitle: "Dual-Hub Global Compliance & Transaction Security",
+            introDesc: "Anchored in Los Angeles and Hong Kong. Backed by highly regulated ARC (US) and IATA/TIA (HK) accreditations, establishing an unshakeable foundation for global fund routing, local market expertise, and B2B operational integrity.",
+            sysTitle: "System & Operational Credentials",
+            sysDesc: "Including ISO9001, ISO27001, information security certification and proprietary digital system support."
         },
         ZH: {
             badge: "全球合规与信任根基",
@@ -49,7 +53,11 @@ export default function EntityCredentials() {
             usBadge2: "佛州旅行经销正规牌照",
             usBadge2Sub: "受该州直接监管保护的旅行销售特许资质 (注册号:",
             usRoles: "北美地区各大航空公司资源的直连枢纽以及前沿一手全球团队票的核心优势源头。",
-            roleTitle: "底层业务定位"
+            roleTitle: "底层业务定位",
+            introTitle: "美港双引擎：全球合规与资金流转安全底座",
+            introDesc: "扎根洛杉矶与香港。依托高标准的美国 ARC 与香港 IATA/TIA 核心旅游资质，构筑坚不可摧的全球资金流转通道、深度本地化运营团队及 B2B 交易信用基石。",
+            sysTitle: "系统与管理能力背书",
+            sysDesc: "包括 ISO9001、ISO27001、信息系统安全等级保护认证，以及自研系统与数字化管理能力。"
         }
     };
     const t = text[lang];
@@ -66,6 +74,17 @@ export default function EntityCredentials() {
                     <p className="mt-4 text-slate-600 max-w-2xl mx-auto md:text-lg">
                         {t.desc}
                     </p>
+
+                    {/* Dual-Hub Intro Block */}
+                    <div className="mt-12 p-8 md:p-12 bg-[#0b2853] rounded-[2rem] text-white shadow-2xl max-w-5xl mx-auto relative overflow-hidden text-left md:text-center">
+                        <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-500/10 rounded-full blur-3xl" />
+                        <h3 className="text-2xl md:text-3xl font-bold mb-6 relative z-10 leading-tight">
+                            {t.introTitle}
+                        </h3>
+                        <p className="text-slate-300 text-base md:text-xl leading-relaxed max-w-4xl mx-auto font-medium relative z-10">
+                            {t.introDesc}
+                        </p>
+                    </div>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -140,6 +159,26 @@ export default function EntityCredentials() {
                             </div>
                             <p className="text-sm text-slate-600 leading-relaxed font-medium">
                                 {t.usRoles}
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Entity 3: System (Centrally positioned below if needed, or in grid) */}
+                    <div className="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm relative overflow-hidden transition-all hover:shadow-lg md:col-span-2 lg:col-span-1">
+                        <div className="absolute top-0 left-0 w-2 h-full bg-slate-400" />
+                        <h3 className="text-xl font-bold text-slate-900 mb-1">{t.sysTitle}</h3>
+                        <p className="text-slate-500 text-sm mb-8 font-medium">ISO & Digital Excellence</p>
+
+                        <div className="space-y-4 mb-8">
+                            <div className="flex items-center gap-3">
+                                <Shield className="w-5 h-5 text-slate-400" />
+                                <span className="text-sm font-semibold text-slate-700">ISO 9001 / ISO 27001</span>
+                            </div>
+                        </div>
+
+                        <div className="pt-6 border-t border-slate-100 mt-auto">
+                            <p className="text-sm text-slate-600 leading-relaxed font-medium italic">
+                                {t.sysDesc}
                             </p>
                         </div>
                     </div>

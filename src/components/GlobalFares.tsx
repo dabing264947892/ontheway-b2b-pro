@@ -1,0 +1,107 @@
+"use client";
+
+import { useLanguage } from "@/context/LanguageContext";
+import { Globe, ArrowRightLeft, CreditCard, ShieldCheck } from "lucide-react";
+
+export default function GlobalFares() {
+    const { lang } = useLanguage();
+
+    const text = {
+        EN: {
+            title: "Global POS Advantage",
+            h2: "Unlocking Global Fares with 13+ Local POS Capabilities",
+            desc: "Overcome geographic pricing barriers. Leverage our extensive local ticketing configurations across APAC, Americas, and EMEA to capture localized underlying fares and optimize cross-border BSP/ARC settlement efficiency.",
+            features: [
+                {
+                    icon: Globe,
+                    title: "APAC, Americas & EMEA",
+                    desc: "Strategic ticketing hubs across three major continents."
+                },
+                {
+                    icon: ArrowRightLeft,
+                    title: "Cross-Border Settlement",
+                    desc: "High-efficiency ARC and BSP fund routing."
+                },
+                {
+                    icon: CreditCard,
+                    title: "Localized Fares",
+                    desc: "Direct access to market-specific underlying inventory."
+                },
+                {
+                    icon: ShieldCheck,
+                    title: "Risk Mitigation",
+                    desc: "Secure compliance framework for international transactions."
+                }
+            ]
+        },
+        ZH: {
+            title: "全球结算优势",
+            h2: "依托 13+ 本地出票配置，突破全球运价壁垒",
+            desc: "跨越地域定价限制。调用横跨亚太、美洲与欧洲的本地化配置矩阵，精准获取属地化底价，并极致优化跨国票务的资金流转与结算效率。",
+            features: [
+                {
+                    icon: Globe,
+                    title: "横跨亚太、美洲与欧洲",
+                    desc: "战略部署三大洲核心票务清算枢纽。"
+                },
+                {
+                    icon: ArrowRightLeft,
+                    title: "跨国资金流转",
+                    desc: "依托高效 ARC 与 BSP 体系优化跨境结算。"
+                },
+                {
+                    icon: CreditCard,
+                    title: "属地化底层运价",
+                    desc: "系统直连，获取特定市场专属深库存与底价。"
+                },
+                {
+                    icon: ShieldCheck,
+                    title: "风控与合规保障",
+                    desc: "为海量跨区交易提供坚实的全球风控与合规框架。"
+                }
+            ]
+        }
+    };
+
+    const t = text[lang];
+
+    return (
+        <section id="global-fares" className="py-24 bg-[#051630] border-t border-white/10 relative overflow-hidden">
+            {/* Background Map / Tech Grid Effect */}
+            <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:64px_64px] [mask-image:radial-gradient(ellipse_60%_60%_at_50%_50%,#000_20%,transparent_100%)] opacity-20 pointer-events-none" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-blue-500/10 rounded-full blur-[120px] pointer-events-none" />
+
+            <div className="container mx-auto px-4 lg:px-8 max-w-7xl relative z-10">
+                <div className="flex flex-col lg:flex-row gap-16 items-center">
+                    {/* Left Typography */}
+                    <div className="lg:w-1/2 space-y-6">
+                        <span className="text-sm font-bold tracking-widest text-emerald-400 uppercase">{t.title}</span>
+                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
+                            {t.h2}
+                        </h2>
+                        <div className="w-16 h-1 lg:h-1.5 bg-emerald-500 rounded my-8"></div>
+                        <p className="text-lg md:text-xl text-slate-300 leading-relaxed font-medium">
+                            {t.desc}
+                        </p>
+                    </div>
+
+                    {/* Right Grid */}
+                    <div className="lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
+                        {t.features.map((feature, idx) => {
+                            const Icon = feature.icon;
+                            return (
+                                <div key={idx} className="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-md hover:bg-white/10 transition-colors">
+                                    <div className="w-12 h-12 bg-emerald-500/20 rounded-xl flex items-center justify-center mb-6">
+                                        <Icon className="w-6 h-6 text-emerald-400" />
+                                    </div>
+                                    <h3 className="text-xl font-bold text-white mb-2">{feature.title}</h3>
+                                    <p className="text-slate-400 text-sm leading-relaxed">{feature.desc}</p>
+                                </div>
+                            );
+                        })}
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+}
