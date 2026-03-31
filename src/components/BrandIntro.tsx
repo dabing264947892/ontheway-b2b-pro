@@ -11,11 +11,11 @@ export default function BrandIntro() {
     const text = {
         EN: {
             title: "Executive Summary",
-            copy: "As the group's global strategic landing point, On The Way Overseas is dedicated to building a highly competitive global resource allocation platform. We verticalize a comprehensive suite of air, hotel, ground mobility, and digital system solutions, providing international B2B partners with reliable API connectivity, full-scenario supply chain resources, and high-performance fulfillment support. Powered by technology and operations across hubs like the U.S. and Hong Kong, we enable every increment of value for our clients."
+            copy: "As the global strategic hub of Tengxuan Travel Group, On The Way is dedicated to building a highly competitive global travel resource allocation platform. We deeply verticalize the aggregation of air, hotel, ground mobility, and digital solutions, empowering every increment of value for our global B2B partners."
         },
         ZH: {
             title: "品牌简介",
-            copy: "作为在路上集团布局全球的战略枢纽，在路上海外（On The Way Overseas）致力于构建极具竞争力的全球旅行资源配置平台。我们深度垂直聚合机票、酒店、地面交通与数字化系统方案，为国际 B2B 合作伙伴提供高可靠的接口连接、全场景供应链资源及高效的履约协同支撑。依托美国、香港等地的全球化服务矩阵，我们以技术与运营双轮驱动，赋能客户每一份增量价值。"
+            copy: "作为腾轩旅游集团布局全球的战略枢纽，在路上（On The Way ）致力于构建极具竞争力的全球旅行资源配置平台。深度垂直聚合机票、酒店、地面交通与数字化方案，为全球 B2B 合作伙伴赋能每一份增量价值。"
         }
     };
     const t = text[lang];
