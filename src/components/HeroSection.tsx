@@ -5,7 +5,7 @@ import { ArrowRight, ChevronRight, Activity, Zap, Layers } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 import Link from "next/link";
 
-const heroBg = "/ontheway-b2b/images/tech_aviation_v2.png";
+const heroBg = "/ontheway-b2b-pro/images/tech_aviation_v2.png";
 
 export default function HeroSection() {
     const { lang } = useLanguage();

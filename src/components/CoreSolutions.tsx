@@ -4,7 +4,7 @@ import { useLanguage } from "@/context/LanguageContext";
 import { Plane, Bed, UsersRound, Car, CodeSquare, CheckCircle2 } from "lucide-react";
 import Image from "next/image";
 
-const hotelVisual = "/ontheway-b2b/images/tech_hotel_v2.png";
+const hotelVisual = "/ontheway-b2b-pro/images/tech_hotel_v2.png";
 
 export default function CoreSolutions() {
     const { lang } = useLanguage();
