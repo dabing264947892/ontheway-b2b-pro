@@ -47,12 +47,13 @@ export default function HeroSection() {
                 src={heroBg}
                 alt="Global Travel Network Background"
                 fill
-                className="object-cover opacity-30 -z-10 mix-blend-screen"
+                className="object-cover opacity-40 -z-10 mix-blend-screen"
                 priority
                 quality={100}
                 unoptimized
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0b2853] via-[#0b2853]/70 to-[#0b2853]/90 -z-10" />
+            <div className="absolute inset-0 bg-[#0b2853] -z-20" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0b2853] via-[#0b2853]/70 to-[#0b2853]/90 -z-10 pointer-events-none" />
             
             <div className="container mx-auto px-4 lg:px-8">
                 <div className="max-w-5xl mx-auto text-center space-y-8">

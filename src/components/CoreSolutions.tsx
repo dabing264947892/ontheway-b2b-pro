@@ -113,7 +113,7 @@ export default function CoreSolutions() {
                                 className={`group p-8 md:p-10 rounded-3xl border border-slate-100 bg-slate-50/50 hover:bg-white hover:shadow-2xl hover:shadow-[#0b2853]/5 transition-all duration-300 relative overflow-hidden ${index === 4 ? 'lg:col-span-2' : ''}`}
                             >
                                 {index === 1 && (
-                                    <div className="absolute inset-0 -z-10 opacity-0 group-hover:opacity-20 transition-opacity duration-700">
+                                    <div className="absolute inset-0 z-0 opacity-0 group-hover:opacity-40 transition-opacity duration-700 pointer-events-none">
                                         <Image 
                                             src={hotelVisual} 
                                             alt="Smart Hotel Visual" 
@@ -121,6 +121,7 @@ export default function CoreSolutions() {
                                             className="object-cover scale-110 group-hover:scale-100 transition-transform duration-1000"
                                             unoptimized
                                         />
+                                        <div className="absolute inset-0 bg-white/60 group-hover:bg-white/40 transition-colors" />
                                     </div>
                                 )}
                                 <div className="flex items-start gap-6 mb-8 relative z-10">
