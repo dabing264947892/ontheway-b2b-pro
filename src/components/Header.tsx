@@ -43,8 +43,8 @@ export default function Header() {
         <header className="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm transition-all duration-300">
             <div className="container mx-auto px-4 lg:px-8 h-20 md:h-24 flex items-center justify-between">
                 {/* Logo */}
-                <Link href="/" className="flex items-center relative z-10 transition-transform hover:scale-105">
-                    <Logo className="h-[36px] md:h-[50px] lg:h-[60px] w-auto" />
+                <Link href="/" className="flex items-center relative z-10 transition-transform hover:scale-105 shrink-0">
+                    <Logo className="h-[36px] md:h-[50px] lg:h-[60px] aspect-[4.5/1]" />
                 </Link>
 
                 {/* Desktop Navigation */}
