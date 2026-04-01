@@ -11,9 +11,8 @@ export default function Logo({ className }: { className?: string }) {
             height={100}
             className={`${className} object-contain block select-none`}
             style={{ 
-                height: 'auto', 
                 width: 'auto',
-                maxHeight: '100%',
+                maxWidth: '100%',
                 display: 'block'
             }}
             priority
