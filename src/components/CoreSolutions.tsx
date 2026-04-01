@@ -22,10 +22,10 @@ export default function CoreSolutions() {
                 },
                 {
                     id: "hotel",
-                    title: "Intelligent B2B Accommodation & Mobility Matrix",
-                    desc: "Access 3,000,000+ global properties with advanced static data mapping and deduplication. Real-time dynamic distribution ensuring inventory accuracy and reliable post-booking fulfillment.",
+                    title: "Strategic B2B Accommodation & Global Mobility",
+                    desc: "Harnessing Group-level synergy to provide integrated accommodation solutions. Access 3,000,000+ global properties with real-time dynamic distribution, ensuring resource consistency and reliable fulfillment across markets.",
                     icon: Bed,
-                    points: ["Multi-source hotel content", "Price comparison capability", "Supplier management and routing logic", "Group and corporate agreement support", "Suitable for managed travel and project-based stays"]
+                    points: ["Global resource synergy", "Market-leading inventory availability", "Integrated supplier management", "Consistency in service standards", "Optimized for corporate and project-based stays"]
                 },
                 {
                     id: "group",
@@ -62,10 +62,10 @@ export default function CoreSolutions() {
                 },
                 {
                     id: "hotel",
-                    title: "智能化 B2B 酒店与地面出行矩阵",
-                    desc: "接入逾 300 万家全球酒店库。具备领先的静态数据映射（Mapping）与去重能力，实时动态分销确保房态精准，为您的下游客户提供坚实的履约保障。",
+                    title: "战略级 B2B 酒店与全球出行供给",
+                    desc: "依托集团资源协同效应，提供一体化住宿解决方案。接入全球逾 300 万家酒店，通过实时动态分销确保资源的一致性与履约的稳定性。",
                     icon: Bed,
-                    points: ["多来源酒店内容整合", "同屏比价能力", "供应商管理与切换逻辑", "支持酒店集团协议与客户协议托管", "适配企业差旅与项目型住宿需求"]
+                    points: ["全球资源协同优势", "市场领先的库存可用性", "一体化供应商管理", "服务标准的高度一致性", "适配企业级与项目型住宿需求"]
                 },
                 {
                     id: "group",

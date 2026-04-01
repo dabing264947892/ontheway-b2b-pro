@@ -40,16 +40,19 @@ export default function BrandIntro() {
                         <div className="absolute -top-6 -right-6 w-40 h-40 bg-blue-500/10 rounded-full blur-3xl -z-10" />
                     </div>
 
-                    <div className="lg:w-1/2 order-1 lg:order-2 space-y-8 lg:pl-8">
-                        <div className="inline-flex">
-                            <span className="text-sm font-bold tracking-widest text-[#0b2853] bg-[#0b2853]/5 px-4 py-1.5 rounded-full uppercase">
+                    <div className="lg:w-1/2 order-1 lg:order-2 space-y-6 lg:pl-12">
+                        <div className="space-y-4">
+                            <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight">
                                 {t.title}
-                            </span>
+                            </h2>
+                            <div className="w-16 h-1.5 bg-[#E62B22] rounded-full"></div>
                         </div>
-                        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-relaxed text-slate-800 drop-shadow-sm">
-                            {t.copy}
-                        </h2>
-                        <div className="w-16 h-1.5 bg-gradient-to-r from-[#0b2853] to-emerald-400 rounded-full mt-4"></div>
+                        
+                        <div className="space-y-6 pt-4">
+                            <p className="text-lg md:text-xl text-slate-600 leading-relaxed font-medium">
+                                {t.copy}
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
