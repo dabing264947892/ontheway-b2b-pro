@@ -41,46 +41,47 @@ export default function HeroSection() {
     const t = text[lang];
 
     return (
-        <section id="home" className="relative pt-24 pb-20 md:pt-40 md:pb-24 overflow-hidden bg-[#0b2853] border-b border-white/10">
+        <section id="home" className="relative pt-32 pb-24 md:pt-48 md:pb-36 overflow-hidden bg-[#0a1930]">
             {/* Background Image / Elements */}
             <Image
                 src={heroBg}
                 alt="Global Travel Network Background"
                 fill
-                className="object-cover opacity-55 -z-10"
+                className="object-cover opacity-40 mix-blend-overlay -z-10 scale-110"
                 priority
                 quality={100}
                 unoptimized
             />
-            <div className="absolute inset-0 bg-[#0b2853] -z-20" />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0b1a3d] via-[#0b2853]/50 to-[#0b2853]/80 -z-10 pointer-events-none" />
+            {/* Artistic gradient overlay */}
+            <div className="absolute inset-0 bg-gradient-to-b from-[#0a1930] via-transparent to-[#0a1930] -z-10 pointer-events-none" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-500/10 via-transparent to-transparent -z-10" />
             
             <div className="container mx-auto px-4 lg:px-8">
                 <div className="max-w-5xl mx-auto text-center space-y-8">
-                    <h1 className="text-4xl md:text-5xl lg:text-[4rem] font-extrabold tracking-tight leading-tight text-white drop-shadow-xl">
-                        {t.title1} <br className="hidden md:block" />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-emerald-300 mt-2 block">
+                    <h1 className="text-5xl md:text-7xl lg:text-[5.5rem] font-extrabold tracking-tight leading-[0.95] text-white">
+                        <span className="block mb-4">{t.title1}</span>
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-emerald-400 to-blue-500 drop-shadow-2xl">
                             {t.title2}
                         </span>
                     </h1>
 
-                    <div className="space-y-4 pt-4">
-                        <h2 className="text-xl md:text-2xl font-medium text-white max-w-3xl mx-auto leading-relaxed">
+                    <div className="space-y-6 pt-6">
+                        <h2 className="text-2xl md:text-3xl font-semibold text-white/90 max-w-4xl mx-auto leading-tight italic">
                             {t.sub}
                         </h2>
-                        <p className="text-base md:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
+                        <p className="text-lg md:text-xl text-slate-300/80 max-w-3xl mx-auto leading-relaxed font-medium">
                             {t.desc}
                         </p>
                     </div>
 
-                    <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8 relative z-10 text-base font-bold">
-                        <Link href="#contact" className="w-full sm:w-auto px-8 py-4 bg-white hover:bg-emerald-50 text-[#0b2853] rounded-lg transition-all shadow-xl shadow-white/10 flex items-center justify-center gap-2 hover:-translate-y-0.5">
+                    <div className="flex flex-col sm:flex-row items-center justify-center gap-6 pt-12 relative z-10">
+                        <Link href="#contact" className="w-full sm:w-auto px-10 py-5 bg-white text-[#0a1930] rounded-2xl text-lg font-bold transition-all shadow-[0_0_40px_rgba(255,255,255,0.2)] hover:shadow-[0_0_60px_rgba(255,255,255,0.3)] flex items-center justify-center gap-2 hover:-translate-y-1">
                             {t.btn1}
-                            <ArrowRight className="w-5 h-5" />
+                            <ArrowRight className="w-6 h-6" />
                         </Link>
-                        <Link href="#core-solutions" className="w-full sm:w-auto px-8 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 text-white rounded-lg transition-all items-center justify-center gap-2 hidden sm:flex hover:-translate-y-0.5">
+                        <Link href="#core-solutions" className="w-full sm:w-auto px-10 py-5 bg-white/5 hover:bg-white/10 backdrop-blur-2xl border border-white/20 text-white rounded-2xl text-lg font-bold transition-all items-center justify-center gap-2 hidden sm:flex hover:-translate-y-1">
                             {t.btn2}
-                            <ChevronRight className="w-5 h-5" />
+                            <ChevronRight className="w-6 h-6" />
                         </Link>
                     </div>
 

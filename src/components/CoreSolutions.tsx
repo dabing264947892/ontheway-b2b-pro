@@ -95,7 +95,7 @@ export default function CoreSolutions() {
     const t = text[lang];
 
     return (
-        <section id="core-solutions" className="py-24 bg-white relative overflow-hidden">
+        <section id="core-solutions" className="section-padding bg-white relative overflow-hidden">
             {/* Subtle tech dashboard background */}
             <div
                 className="absolute inset-0 pointer-events-none opacity-[0.04]"
@@ -107,23 +107,23 @@ export default function CoreSolutions() {
             />
             <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#0b2853] via-[#C8A050] to-[#E8311F]" />
             <div className="container mx-auto px-4 lg:px-8">
-                <div className="flex flex-col items-start max-w-5xl mx-auto mb-16 space-y-5">
-                    <div className="inline-flex items-center gap-2">
-                        <div className="w-8 h-0.5 bg-[#E8311F]"></div>
-                        <span className="text-sm font-bold tracking-widest text-[#E8311F] uppercase">{lang === 'EN' ? 'Core Services' : '服务模块'}</span>
+                <div className="flex flex-col items-start max-w-5xl mx-auto mb-24 space-y-6">
+                    <div className="inline-flex items-center gap-3">
+                        <div className="w-12 h-1 bg-gradient-to-r from-[#E8311F] to-transparent"></div>
+                        <span className="text-sm font-bold tracking-[0.2em] text-[#E8311F] uppercase">{lang === 'ZH' ? '服务模块' : 'Core Services'}</span>
                     </div>
-                    <h2 className="text-3xl md:text-5xl font-bold text-slate-900 leading-tight">
+                    <h2 className="text-5xl md:text-7xl font-extrabold text-slate-900 leading-[1.1] tracking-tight">
                         {t.title}
                     </h2>
                 </div>
 
-                <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10">
                     {t.solutions.map((sol, index) => {
                         const Icon = sol.icon;
                         return (
                             <div 
                                 key={sol.id} 
-                                className={`group p-8 md:p-10 rounded-3xl border border-slate-100 bg-slate-50/50 hover:bg-white hover:shadow-2xl hover:shadow-[#0b2853]/5 transition-all duration-300 relative overflow-hidden ${index === 4 ? 'lg:col-span-2' : ''}`}
+                                className={`group p-10 md:p-12 rounded-[2.5rem] border border-slate-100 bg-slate-50/50 hover:bg-white hover:shadow-[0_40px_80px_-15px_rgba(11,40,83,0.1)] transition-all duration-500 relative overflow-hidden ${index === 4 ? 'lg:col-span-2' : ''}`}
                             >
                                 {index === 1 && (
                                     <div className="absolute inset-0 z-0 opacity-0 group-hover:opacity-40 transition-opacity duration-700 pointer-events-none">
@@ -137,13 +137,13 @@ export default function CoreSolutions() {
                                         <div className="absolute inset-0 bg-white/60 group-hover:bg-white/40 transition-colors" />
                                     </div>
                                 )}
-                                <div className="flex items-start gap-6 mb-8 relative z-10">
-                                    <div className="shrink-0 w-16 h-16 bg-[#0b2853]/5 rounded-2xl flex items-center justify-center group-hover:bg-[#0b2853] transition-colors duration-300">
-                                        <Icon className="w-8 h-8 text-[#0b2853] group-hover:text-white transition-colors" />
+                                <div className="flex items-start gap-8 mb-12 relative z-10">
+                                    <div className="shrink-0 w-20 h-20 bg-[#0b2853]/5 rounded-[1.5rem] flex items-center justify-center group-hover:bg-[#0b2853] transition-all duration-500 group-hover:scale-110 group-hover:rotate-6">
+                                        <Icon className="w-10 h-10 text-[#0b2853] group-hover:text-white transition-colors" />
                                     </div>
                                     <div>
-                                        <h3 className="text-2xl font-bold text-slate-900 mb-2">{sol.title}</h3>
-                                        <p className="text-slate-600 leading-relaxed max-w-xl">{sol.desc}</p>
+                                        <h3 className="text-3xl font-extrabold text-slate-900 mb-4 group-hover:text-[#0b2853] transition-colors tracking-tight">{sol.title}</h3>
+                                        <p className="text-slate-600 leading-relaxed max-w-xl text-lg font-medium opacity-80">{sol.desc}</p>
                                     </div>
                                 </div>
                                 <div className={`grid grid-cols-1 ${index === 4 ? 'md:grid-cols-3' : 'md:grid-cols-2'} gap-4 pt-6 border-t border-slate-200/60`}>

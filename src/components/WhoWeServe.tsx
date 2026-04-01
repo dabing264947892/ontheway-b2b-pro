@@ -35,45 +35,46 @@ export default function WhoWeServe() {
     const t = text[lang];
 
     return (
-        <section id="who-we-serve" className="py-24 relative overflow-hidden bg-slate-900 border-t border-slate-800">
+        <section id="who-we-serve" className="section-padding relative overflow-hidden bg-slate-900">
             {/* High-res skyscraper background */}
             <Image
                 src="/ontheway-b2b-pro/images/who_we_serve_bg.png"
                 alt="Corporate Skyscraper Background"
                 fill
-                className="object-cover opacity-30 pointer-events-none"
+                className="object-cover opacity-20 mix-blend-soft-light -z-10 scale-110"
                 unoptimized
             />
             {/* Gradient overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/60 to-slate-900 pointer-events-none" />
+            <div className="absolute inset-0 bg-gradient-to-b from-slate-900 via-slate-900/60 to-slate-900 -z-10 pointer-events-none" />
             
             <div className="container mx-auto px-4 lg:px-8 relative z-10">
-                <div className="text-center max-w-2xl mx-auto mb-20">
-                    <div className="inline-flex items-center gap-2 mb-4 justify-center">
-                        <div className="w-8 h-0.5 bg-[#C8A050]"></div>
-                        <span className="text-sm font-bold tracking-widest text-[#C8A050] uppercase">{lang === 'ZH' ? '客户范围' : 'Target Audience'}</span>
+                <div className="text-center max-w-5xl mx-auto mb-24">
+                    <div className="inline-flex items-center gap-3 mb-8 justify-center">
+                        <div className="w-12 h-1 bg-gradient-to-r from-[#C8A050] to-transparent"></div>
+                        <span className="text-sm font-bold tracking-[0.2em] text-[#C8A050] uppercase">{lang === 'ZH' ? '客户范围' : 'Target Audience'}</span>
                     </div>
-                    <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight leading-tight">
+                    <h2 className="text-5xl md:text-7xl font-extrabold text-white mb-10 tracking-tight leading-[1.1]">
                         {t.title}
                     </h2>
-                    <p className="text-lg text-slate-400 font-medium leading-relaxed">
+                    <p className="text-xl md:text-2xl text-slate-400 font-medium leading-relaxed max-w-4xl mx-auto italic opacity-90">
                         {t.desc}
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr max-w-6xl mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 auto-rows-fr max-w-7xl mx-auto">
                     {t.cards.map((card, idx) => {
                         const Icon = card.icon;
                         return (
                             <div 
                                 key={idx} 
-                                className="bg-white/5 backdrop-blur-md rounded-2xl p-8 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-500 group flex flex-col hover:-translate-y-1 shadow-lg"
+                                className="bg-white/5 backdrop-blur-2xl rounded-[2.5rem] p-10 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-700 group flex flex-col hover:-translate-y-2 shadow-2xl relative overflow-hidden"
                             >
-                                <div className="w-14 h-14 bg-white/10 rounded-xl flex items-center justify-center mb-8 group-hover:bg-[#C8A050] transition-all duration-500">
-                                    <Icon className="w-7 h-7 text-white transition-colors" />
+                                <div className="absolute -bottom-10 -right-10 w-32 h-32 bg-[#C8A050]/5 blur-3xl -z-10 group-hover:bg-[#C8A050]/10 transition-all duration-700" />
+                                <div className="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center mb-10 group-hover:bg-[#C8A050] transition-all duration-500 group-hover:scale-110 group-hover:rotate-6">
+                                    <Icon className="w-8 h-8 text-white transition-colors" />
                                 </div>
-                                <h3 className="text-xl font-bold text-white mb-4 group-hover:text-[#C8A050] transition-colors">{card.title}</h3>
-                                <p className="text-slate-400 leading-relaxed font-medium transition-colors group-hover:text-slate-300">{card.copy}</p>
+                                <h3 className="text-2xl font-extrabold text-white mb-6 group-hover:text-[#C8A050] transition-colors tracking-tight">{card.title}</h3>
+                                <p className="text-slate-400 leading-relaxed font-semibold transition-colors group-hover:text-slate-200 text-base">{card.copy}</p>
                             </div>
                         );
                     })}

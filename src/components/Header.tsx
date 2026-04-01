@@ -40,19 +40,19 @@ export default function Header() {
     const t = text[lang];
 
     return (
-        <header className="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm transition-all duration-300">
-            <div className="container mx-auto px-4 lg:px-8 h-20 md:h-24 flex items-center justify-between">
+        <header className="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-xl border-b border-white/20 shadow-sm transition-all duration-300">
+            <div className="container mx-auto px-4 lg:px-8 h-24 flex items-center justify-between">
                 {/* Logo */}
                 <Link href="/" className="flex items-center relative z-10 transition-transform hover:scale-105 shrink-0">
-                    <Logo className="h-10 md:h-11" />
+                    <Logo className="h-14 md:h-16" />
                 </Link>
 
                 {/* Desktop Navigation */}
-                <nav className="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-700">
-                    <Link href="#who-we-serve" className="hover:text-[#0b2853] transition-colors">{t.serve}</Link>
-                    <Link href="#core-solutions" className="hover:text-[#0b2853] transition-colors">{t.solutions}</Link>
-                    <Link href="#global-capability" className="hover:text-[#0b2853] transition-colors">{t.capability}</Link>
-                    <Link href="#credentials" className="hover:text-[#0b2853] transition-colors">{t.credentials}</Link>
+                <nav className="hidden lg:flex items-center gap-10 text-[15px] font-semibold text-slate-700">
+                    <Link href="#who-we-serve" className="hover:text-[#0b2853] transition-all hover:scale-105">{t.serve}</Link>
+                    <Link href="#core-solutions" className="hover:text-[#0b2853] transition-all hover:scale-105">{t.solutions}</Link>
+                    <Link href="#global-capability" className="hover:text-[#0b2853] transition-all hover:scale-105">{t.capability}</Link>
+                    <Link href="#credentials" className="hover:text-[#0b2853] transition-all hover:scale-105">{t.credentials}</Link>
                 </nav>
 
                 {/* Desktop Actions */}
@@ -64,10 +64,10 @@ export default function Header() {
                         <Globe className="w-4 h-4" />
                         <span className="font-semibold text-[#0b2853]">{lang === "EN" ? "English" : "中文"}</span>
                     </button>
-                    <Link href="#login" className="text-emerald-600 hover:text-emerald-700 font-semibold text-sm transition-colors border-r border-slate-300 pr-5">
+                    <Link href="#login" className="text-emerald-600 hover:text-emerald-700 font-bold text-[15px] transition-colors border-r border-slate-200 pr-6">
                         {t.login}
                     </Link>
-                    <Link href="#contact" className="bg-[#0b2853] hover:bg-[#153a73] text-white px-7 py-2.5 rounded-md text-sm font-medium transition-colors shadow-md text-nowrap tracking-wide">
+                    <Link href="#contact" className="bg-[#0b2853] hover:bg-[#153a73] text-white px-8 py-3 rounded-xl text-sm font-bold transition-all shadow-lg shadow-[#0b2853]/20 hover:-translate-y-0.5 tracking-wide">
                         {t.contact}
                     </Link>
                 </div>
