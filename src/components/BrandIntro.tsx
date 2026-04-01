@@ -30,6 +30,8 @@ export default function BrandIntro() {
                             <Image 
                                 src={brandGraphic} 
                                 alt="Brand Overview Graphic" 
+                                width={800}
+                                height={600}
                                 className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700" 
                                 unoptimized
                             />

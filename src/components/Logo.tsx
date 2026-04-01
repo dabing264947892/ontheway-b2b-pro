@@ -7,10 +7,10 @@ export default function Logo({ className }: { className?: string }) {
         <Image
             src="/ontheway-b2b-pro/logo.png"
             alt="On The Way Logo"
-            width={300}
-            height={80}
-            className={className}
-            style={{ height: "100%", width: "auto", objectFit: "contain" }}
+            width={320}
+            height={100}
+            className={`${className} object-contain block select-none`}
+            style={{ height: '42px', width: 'auto', display: 'block' }}
             priority
             unoptimized
         />

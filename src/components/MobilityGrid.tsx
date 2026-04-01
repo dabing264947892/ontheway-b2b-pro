@@ -60,42 +60,42 @@ export default function MobilityGrid() {
                 </div>
 
                 <div className="grid md:grid-cols-3 gap-8">
-                    <div className="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-1 transition-all duration-300">
-                        <div className="w-14 h-14 bg-primary-light rounded-2xl flex items-center justify-center mb-6 text-primary">
-                            <PlaneTakeoff className="w-7 h-7" />
+                    <div className="glass-card p-10 hover:shadow-[0_40px_80px_-15px_rgba(11,40,83,0.15)] hover:-translate-y-2 transition-all duration-500 group">
+                        <div className="w-16 h-16 bg-[#0b2853]/5 rounded-2xl flex items-center justify-center mb-8 text-[#0b2853] group-hover:bg-[#0b2853] group-hover:text-white transition-all duration-500">
+                            <PlaneTakeoff className="w-8 h-8" />
                         </div>
-                        <h3 className="text-xl font-bold text-slate-900 mb-3">{t.box1Title}</h3>
-                        <p className="text-slate-600 mb-8 leading-relaxed">{t.box1Desc}</p>
-                        <div className="flex items-baseline gap-2">
-                            <span className="text-4xl font-extrabold text-slate-900">30+</span>
-                            <span className="text-sm text-slate-500 font-medium tracking-wide uppercase">{t.box1Suffix}</span>
+                        <h3 className="text-2xl font-extrabold text-slate-900 mb-4 group-hover:text-[#0b2853] transition-colors">{t.box1Title}</h3>
+                        <p className="text-slate-600 mb-10 leading-relaxed font-medium opacity-80">{t.box1Desc}</p>
+                        <div className="flex items-baseline gap-3">
+                            <span className="text-5xl font-black text-[#0b2853]">30+</span>
+                            <span className="text-xs text-slate-400 font-bold tracking-widest uppercase">{t.box1Suffix}</span>
                         </div>
                     </div>
 
-                    <div className="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-1 transition-all duration-300 relative overflow-hidden">
-                        <div className="absolute top-0 right-0 p-8 opacity-5">
+                    <div className="glass-card p-10 hover:shadow-[0_40px_80px_-15px_rgba(11,40,83,0.15)] hover:-translate-y-2 transition-all duration-500 group relative overflow-hidden">
+                        <div className="absolute top-0 right-0 p-10 opacity-5 group-hover:opacity-10 transition-opacity">
                             <TicketPercent className="w-32 h-32" />
                         </div>
-                        <div className="w-14 h-14 bg-primary-light rounded-2xl flex items-center justify-center mb-6 text-primary relative z-10">
-                            <TicketPercent className="w-7 h-7" />
+                        <div className="w-16 h-16 bg-[#0b2853]/5 rounded-2xl flex items-center justify-center mb-8 text-[#0b2853] group-hover:bg-[#0b2853] group-hover:text-white transition-all duration-500 relative z-10">
+                            <TicketPercent className="w-8 h-8" />
                         </div>
-                        <h3 className="text-xl font-bold text-slate-900 mb-3 relative z-10">{t.box2Title}</h3>
-                        <p className="text-slate-600 mb-8 leading-relaxed relative z-10">{t.box2Desc}</p>
-                        <div className="flex items-baseline gap-2 relative z-10">
-                            <span className="text-4xl font-extrabold text-slate-900">48</span>
-                            <span className="text-sm text-slate-500 font-medium tracking-wide uppercase">{t.box2Suffix}</span>
+                        <h3 className="text-2xl font-extrabold text-slate-900 mb-4 relative z-10 group-hover:text-[#0b2853] transition-colors">{t.box2Title}</h3>
+                        <p className="text-slate-600 mb-10 leading-relaxed font-medium opacity-80 relative z-10">{t.box2Desc}</p>
+                        <div className="flex items-baseline gap-3 relative z-10">
+                            <span className="text-5xl font-black text-[#0b2853]">48</span>
+                            <span className="text-xs text-slate-400 font-bold tracking-widest uppercase">{t.box2Suffix}</span>
                         </div>
                     </div>
 
-                    <div className="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-1 transition-all duration-300">
-                        <div className="w-14 h-14 bg-primary-light rounded-2xl flex items-center justify-center mb-6 text-primary">
-                            <Users className="w-7 h-7" />
+                    <div className="glass-card p-10 hover:shadow-[0_40px_80px_-15px_rgba(11,40,83,0.15)] hover:-translate-y-2 transition-all duration-500 group">
+                        <div className="w-16 h-16 bg-[#0b2853]/5 rounded-2xl flex items-center justify-center mb-8 text-[#0b2853] group-hover:bg-[#0b2853] group-hover:text-white transition-all duration-500">
+                            <Users className="w-8 h-8" />
                         </div>
-                        <h3 className="text-xl font-bold text-slate-900 mb-3">{t.box3Title}</h3>
-                        <p className="text-slate-600 mb-8 leading-relaxed">{t.box3Desc}</p>
-                        <div className="flex items-baseline gap-2">
-                            <span className="text-4xl font-extrabold text-slate-900">5</span>
-                            <span className="text-sm text-slate-500 font-medium tracking-wide uppercase">{t.box3Suffix}</span>
+                        <h3 className="text-2xl font-extrabold text-slate-900 mb-4 group-hover:text-[#0b2853] transition-colors">{t.box3Title}</h3>
+                        <p className="text-slate-600 mb-10 leading-relaxed font-medium opacity-80">{t.box3Desc}</p>
+                        <div className="flex items-baseline gap-3">
+                            <span className="text-5xl font-black text-[#0b2853]">5</span>
+                            <span className="text-xs text-slate-400 font-bold tracking-widest uppercase">{t.box3Suffix}</span>
                         </div>
                     </div>
                 </div>

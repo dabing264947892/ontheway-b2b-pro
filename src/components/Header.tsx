@@ -23,7 +23,8 @@ export default function Header() {
         EN: { 
             serve: "Who We Serve", 
             solutions: "Core Solutions", 
-            capability: "Capabilities", 
+            aviation: "Global Aviation", 
+            supply: "Supply Chain",
             credentials: "Credentials", 
             contact: "Contact Us",
             login: "Agent Login"
@@ -31,8 +32,9 @@ export default function Header() {
         ZH: { 
             serve: "我们服务谁", 
             solutions: "核心解决方案", 
-            capability: "能力概览", 
-            credentials: "资质实体", 
+            aviation: "航空动力", 
+            supply: "全球供应链",
+            credentials: "资质项目", 
             contact: "联系合作",
             login: "代理系统登录" 
         }
@@ -40,34 +42,35 @@ export default function Header() {
     const t = text[lang];
 
     return (
-        <header className="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-xl border-b border-white/20 shadow-sm transition-all duration-300">
+        <header className="sticky top-0 z-50 w-full bg-white/70 backdrop-blur-2xl border-b border-white/10 shadow-[0_2px_20px_-10px_rgba(11,40,83,0.1)] transition-all duration-300">
             <div className="container mx-auto px-4 lg:px-8 h-24 flex items-center justify-between">
                 {/* Logo */}
                 <Link href="/" className="flex items-center relative z-10 transition-transform hover:scale-105 shrink-0">
-                    <Logo className="h-14 md:h-16" />
+                    <Logo className="h-12 md:h-14" />
                 </Link>
 
                 {/* Desktop Navigation */}
-                <nav className="hidden lg:flex items-center gap-10 text-[15px] font-semibold text-slate-700">
-                    <Link href="#who-we-serve" className="hover:text-[#0b2853] transition-all hover:scale-105">{t.serve}</Link>
-                    <Link href="#core-solutions" className="hover:text-[#0b2853] transition-all hover:scale-105">{t.solutions}</Link>
-                    <Link href="#global-capability" className="hover:text-[#0b2853] transition-all hover:scale-105">{t.capability}</Link>
-                    <Link href="#credentials" className="hover:text-[#0b2853] transition-all hover:scale-105">{t.credentials}</Link>
+                <nav className="hidden xl:flex items-center gap-8 text-[14px] font-bold text-slate-600">
+                    <Link href="#who-we-serve" className="hover:text-[#0b2853] transition-all hover:-translate-y-0.5">{t.serve}</Link>
+                    <Link href="#core-solutions" className="hover:text-[#0b2853] transition-all hover:-translate-y-0.5">{t.solutions}</Link>
+                    <Link href="#mobility" className="hover:text-[#0b2853] transition-all hover:-translate-y-0.5">{t.aviation}</Link>
+                    <Link href="#supply" className="hover:text-[#0b2853] transition-all hover:-translate-y-0.5">{t.supply}</Link>
+                    <Link href="#credentials" className="hover:text-[#0b2853] transition-all hover:-translate-y-0.5">{t.credentials}</Link>
                 </nav>
 
                 {/* Desktop Actions */}
                 <div className="hidden lg:flex items-center gap-5">
                     <button
                         onClick={toggleLang}
-                        className="flex items-center gap-2 text-sm font-medium text-slate-600 hover:text-[#0b2853] transition-colors bg-slate-100/80 px-4 py-2 rounded-full hover:bg-slate-200"
+                        className="flex items-center gap-2 text-xs font-bold text-slate-500 hover:text-[#0b2853] transition-colors bg-slate-100/50 px-4 py-2 rounded-full hover:bg-slate-200/50 border border-slate-200/50"
                     >
-                        <Globe className="w-4 h-4" />
-                        <span className="font-semibold text-[#0b2853]">{lang === "EN" ? "English" : "中文"}</span>
+                        <Globe className="w-3.5 h-3.5" />
+                        <span>{lang === "EN" ? "EN" : "中文"}</span>
                     </button>
-                    <Link href="#login" className="text-emerald-600 hover:text-emerald-700 font-bold text-[15px] transition-colors border-r border-slate-200 pr-6">
+                    <Link href="#login" className="text-emerald-600 hover:text-emerald-700 font-bold text-[14px] transition-colors border-r border-slate-200 pr-6">
                         {t.login}
                     </Link>
-                    <Link href="#contact" className="bg-[#0b2853] hover:bg-[#153a73] text-white px-8 py-3 rounded-xl text-sm font-bold transition-all shadow-lg shadow-[#0b2853]/20 hover:-translate-y-0.5 tracking-wide">
+                    <Link href="#contact" className="bg-[#0b2853] hover:bg-[#153a73] text-white px-8 py-3.5 rounded-xl text-xs font-bold transition-all shadow-xl shadow-[#0b2853]/20 hover:-translate-y-1 tracking-wider uppercase">
                         {t.contact}
                     </Link>
                 </div>
@@ -96,7 +99,8 @@ export default function Header() {
                     <nav className="flex flex-col gap-6 text-xl text-slate-800 mb-12">
                         <Link href="#who-we-serve" onClick={() => setIsMenuOpen(false)} className="pb-4 border-b border-slate-100">{t.serve}</Link>
                         <Link href="#core-solutions" onClick={() => setIsMenuOpen(false)} className="pb-4 border-b border-slate-100">{t.solutions}</Link>
-                        <Link href="#global-capability" onClick={() => setIsMenuOpen(false)} className="pb-4 border-b border-slate-100">{t.capability}</Link>
+                        <Link href="#mobility" onClick={() => setIsMenuOpen(false)} className="pb-4 border-b border-slate-100">{t.aviation}</Link>
+                        <Link href="#supply" onClick={() => setIsMenuOpen(false)} className="pb-4 border-b border-slate-100">{t.supply}</Link>
                         <Link href="#credentials" onClick={() => setIsMenuOpen(false)} className="pb-4 border-b border-slate-100">{t.credentials}</Link>
                     </nav>
 
