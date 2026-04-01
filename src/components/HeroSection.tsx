@@ -5,7 +5,7 @@ import { ArrowRight, ChevronRight, Activity, Zap, Layers } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 import Link from "next/link";
 
-const heroBg = "/ontheway-b2b-pro/images/tech_aviation_v2.png";
+const heroBg = "/ontheway-b2b-pro/images/hero_futuristic_globe.png";
 
 export default function HeroSection() {
     const { lang } = useLanguage();
@@ -47,13 +47,13 @@ export default function HeroSection() {
                 src={heroBg}
                 alt="Global Travel Network Background"
                 fill
-                className="object-cover opacity-40 -z-10 mix-blend-screen"
+                className="object-cover opacity-55 -z-10"
                 priority
                 quality={100}
                 unoptimized
             />
             <div className="absolute inset-0 bg-[#0b2853] -z-20" />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0b2853] via-[#0b2853]/70 to-[#0b2853]/90 -z-10 pointer-events-none" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0b1a3d] via-[#0b2853]/50 to-[#0b2853]/80 -z-10 pointer-events-none" />
             
             <div className="container mx-auto px-4 lg:px-8">
                 <div className="max-w-5xl mx-auto text-center space-y-8">

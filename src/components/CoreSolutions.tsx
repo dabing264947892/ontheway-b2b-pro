@@ -95,11 +95,24 @@ export default function CoreSolutions() {
     const t = text[lang];
 
     return (
-        <section id="core-solutions" className="py-24 bg-white">
+        <section id="core-solutions" className="py-24 bg-white relative overflow-hidden">
+            {/* Subtle tech dashboard background */}
+            <div
+                className="absolute inset-0 pointer-events-none opacity-[0.04]"
+                style={{
+                    backgroundImage: `url('/ontheway-b2b-pro/images/solutions_tech_dashboard.png')`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                }}
+            />
+            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#0b2853] via-[#C8A050] to-[#E8311F]" />
             <div className="container mx-auto px-4 lg:px-8">
-                <div className="flex flex-col items-start max-w-5xl mx-auto mb-16 space-y-4">
-                    <span className="text-sm font-bold tracking-widest text-[#0b2853] uppercase">{lang === 'EN' ? 'Core Services' : '服务模块'}</span>
-                    <h2 className="text-3xl md:text-5xl font-bold text-slate-900 border-l-4 border-[#0b2853] pl-6 h-full flex items-center">
+                <div className="flex flex-col items-start max-w-5xl mx-auto mb-16 space-y-5">
+                    <div className="inline-flex items-center gap-2">
+                        <div className="w-8 h-0.5 bg-[#E8311F]"></div>
+                        <span className="text-sm font-bold tracking-widest text-[#E8311F] uppercase">{lang === 'EN' ? 'Core Services' : '服务模块'}</span>
+                    </div>
+                    <h2 className="text-3xl md:text-5xl font-bold text-slate-900 leading-tight">
                         {t.title}
                     </h2>
                 </div>

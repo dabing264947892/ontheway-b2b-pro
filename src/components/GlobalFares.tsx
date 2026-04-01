@@ -75,7 +75,10 @@ export default function GlobalFares() {
                 <div className="flex flex-col lg:flex-row gap-16 items-center">
                     {/* Left Typography */}
                     <div className="lg:w-1/2 space-y-6">
-                        <span className="text-sm font-bold tracking-widest text-emerald-400 uppercase">{t.title}</span>
+                        <div className="inline-flex items-center gap-2">
+                            <div className="w-8 h-0.5 bg-emerald-400"></div>
+                            <span className="text-sm font-bold tracking-widest text-emerald-400 uppercase">{t.title}</span>
+                        </div>
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
                             {t.h2}
                         </h2>

@@ -3,14 +3,13 @@
 import { useLanguage } from "@/context/LanguageContext";
 import { Link2, Network, Briefcase, Globe2 } from "lucide-react";
 import Image from "next/image";
-import techBg from "../../public/images/global_capability_bg.png";
 
 export default function GlobalCapability() {
     const { lang } = useLanguage();
 
     const text = {
         EN: {
-            title: "Global Capability Overview",
+            title: "Global Resource & Capability Overview",
             copy: "Built on the group's travel resource allocation capability and OTW's years of service experience, we continue to strengthen supply integration, digital connectivity and fulfillment coordination for complex international travel cooperation.",
             points: [
                 { title: "Integrated Travel Supply", desc: "Air, hotel, rail, mobility, MICE and related services", icon: Link2 },
@@ -34,24 +33,29 @@ export default function GlobalCapability() {
     const t = text[lang];
 
     return (
-        <section id="global-capability" className="py-24 bg-slate-50 border-t border-slate-200/60 overflow-hidden relative">
-            <Image 
-                src={techBg} 
-                alt="Tech Abstract Background" 
-                fill 
-                className="object-cover opacity-15 mix-blend-multiply pointer-events-none -z-10" 
-                unoptimized 
+        <section id="global-capability" className="py-24 bg-[#06152b] overflow-hidden relative" style={{ position: 'relative' }}>
+            {/* New high-res global network image as full background */}
+            <Image
+                src="/ontheway-b2b-pro/images/global_network_coverage.png"
+                alt="Global Network Visualization"
+                fill
+                className="object-cover opacity-40 pointer-events-none"
+                unoptimized
             />
-            <div className="absolute right-0 bottom-0 w-[800px] h-[800px] bg-[#0b2853]/5 rounded-full blur-[120px] -z-10 pointer-events-none" />
+            {/* Gradient overlay for readability */}
+            <div className="absolute inset-0 bg-gradient-to-r from-[#06152b]/95 via-[#06152b]/80 to-[#06152b]/60 pointer-events-none" />
             
-            <div className="container mx-auto px-4 lg:px-8 max-w-7xl">
+            <div className="container mx-auto px-4 lg:px-8 max-w-7xl relative z-10">
                 <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-center">
                     <div className="lg:w-1/2 space-y-8">
-                        <span className="text-sm font-bold tracking-widest text-[#0b2853] uppercase">{lang === 'EN' ? 'Global Network' : '全球网络'}</span>
-                        <h2 className="text-3xl md:text-5xl font-bold text-slate-900 leading-tight">
+                        <div className="inline-flex items-center gap-2">
+                            <div className="w-8 h-0.5 bg-[#C8A050]"></div>
+                            <span className="text-sm font-bold tracking-widest text-[#C8A050] uppercase">{lang === 'EN' ? 'Global Network' : '全球网络'}</span>
+                        </div>
+                        <h2 className="text-3xl md:text-5xl font-bold text-white leading-tight">
                             {t.title}
                         </h2>
-                        <p className="text-lg text-slate-600 leading-relaxed bg-white/50 backdrop-blur-sm p-6 rounded-2xl border border-slate-200/50 shadow-sm">
+                        <p className="text-lg text-slate-300 leading-relaxed">
                             {t.copy}
                         </p>
                     </div>
@@ -60,12 +64,12 @@ export default function GlobalCapability() {
                         {t.points.map((pt, idx) => {
                             const Icon = pt.icon;
                             return (
-                                <div key={idx} className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-lg hover:-translate-y-1 hover:border-[#0b2853]/20 transition-all duration-300">
-                                    <div className="w-12 h-12 bg-slate-50 rounded-full flex items-center justify-center mb-6">
-                                        <Icon className="w-6 h-6 text-[#0b2853]" />
+                                <div key={idx} className="bg-white/5 backdrop-blur-md p-8 rounded-2xl border border-white/10 hover:bg-white/10 hover:-translate-y-1 transition-all duration-300">
+                                    <div className="w-12 h-12 bg-[#C8A050]/10 rounded-full flex items-center justify-center mb-6">
+                                        <Icon className="w-6 h-6 text-[#C8A050]" />
                                     </div>
-                                    <h3 className="text-xl font-bold text-slate-900 mb-3">{pt.title}</h3>
-                                    <p className="text-slate-600 font-medium text-sm leading-relaxed">{pt.desc}</p>
+                                    <h3 className="text-xl font-bold text-white mb-3">{pt.title}</h3>
+                                    <p className="text-slate-400 font-medium text-sm leading-relaxed">{pt.desc}</p>
                                 </div>
                             );
                         })}

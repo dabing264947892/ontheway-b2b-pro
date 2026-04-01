@@ -40,7 +40,10 @@ export default function WhyChooseUs() {
             <div className="container mx-auto px-4 lg:px-8">
                 <div className="flex flex-col md:flex-row items-start justify-between gap-12 mb-20 max-w-6xl mx-auto">
                     <div className="md:w-1/3">
-                        <span className="text-sm font-bold tracking-widest text-[#699af3] uppercase mb-4 block">{lang === 'EN' ? 'Our Advantages' : '核心优势'}</span>
+                        <div className="inline-flex items-center gap-2 mb-4">
+                            <div className="w-8 h-0.5 bg-[#C8A050]"></div>
+                            <span className="text-sm font-bold tracking-widest text-[#C8A050] uppercase">{lang === 'EN' ? 'Our Advantages' : '核心优势'}</span>
+                        </div>
                         <h2 className="text-3xl md:text-5xl font-bold text-white leading-tight">
                             {t.title}
                         </h2>
