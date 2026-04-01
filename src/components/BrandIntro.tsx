@@ -40,16 +40,20 @@ export default function BrandIntro() {
                         <div className="absolute -top-6 -right-6 w-40 h-40 bg-blue-500/10 rounded-full blur-3xl -z-10" />
                     </div>
 
-                    <div className="lg:w-1/2 order-1 lg:order-2 space-y-6 lg:pl-12">
-                        <div className="space-y-4">
-                            <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight">
+                    <div className="lg:w-1/2 order-1 lg:order-2 space-y-8 lg:pl-12">
+                        <div className="space-y-6">
+                            <div className="inline-flex items-center gap-2">
+                                <div className="w-8 h-0.5 bg-[#E8311F]"></div>
+                                <span className="text-sm font-bold tracking-widest text-[#E8311F] uppercase">{lang === 'ZH' ? '品牌背景' : 'Brand Overview'}</span>
+                            </div>
+                            <h2 className="text-5xl md:text-6xl font-extrabold text-slate-900 leading-[1.1]">
                                 {t.title}
                             </h2>
-                            <div className="w-16 h-1.5 bg-[#E62B22] rounded-full"></div>
+                            <div className="w-20 h-1.5 bg-[#E8311F] rounded-full"></div>
                         </div>
                         
-                        <div className="space-y-6 pt-4">
-                            <p className="text-lg md:text-xl text-slate-600 leading-relaxed font-medium">
+                        <div className="space-y-6 pt-2">
+                            <p className="text-base md:text-lg text-slate-600 leading-relaxed font-medium">
                                 {t.copy}
                             </p>
                         </div>

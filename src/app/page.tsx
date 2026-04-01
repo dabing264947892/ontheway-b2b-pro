@@ -6,8 +6,7 @@ import CoreSolutions from "@/components/CoreSolutions";
 import GlobalFares from "@/components/GlobalFares";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import GlobalCapability from "@/components/GlobalCapability";
-import EntityCredentials from "@/components/EntityCredentials";
-import TypicalUseCases from "@/components/TypicalUseCases";
+import Credentials from "@/components/Credentials";
 import LeadForm from "@/components/LeadForm";
 import Footer from "@/components/Footer";
 
@@ -23,8 +22,7 @@ export default function Home() {
                 <GlobalFares />
                 <WhyChooseUs />
                 <GlobalCapability />
-                <EntityCredentials />
-                <TypicalUseCases />
+                <Credentials />
                 <LeadForm />
             </div>
             <Footer />

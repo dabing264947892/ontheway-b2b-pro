@@ -2,6 +2,7 @@
 
 import { useLanguage } from "@/context/LanguageContext";
 import { Building2, Globe, Boxes, Building, Presentation } from "lucide-react";
+import Image from "next/image";
 
 export default function WhoWeServe() {
     const { lang } = useLanguage();
@@ -34,26 +35,45 @@ export default function WhoWeServe() {
     const t = text[lang];
 
     return (
-        <section id="who-we-serve" className="py-24 bg-slate-50 border-t border-slate-200/50">
-            <div className="container mx-auto px-4 lg:px-8">
-                <div className="text-center max-w-2xl mx-auto mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">{t.title}</h2>
-                    <p className="text-lg text-slate-600">{t.desc}</p>
+        <section id="who-we-serve" className="py-24 relative overflow-hidden bg-slate-900 border-t border-slate-800">
+            {/* High-res skyscraper background */}
+            <Image
+                src="/ontheway-b2b-pro/images/who_we_serve_bg.png"
+                alt="Corporate Skyscraper Background"
+                fill
+                className="object-cover opacity-30 pointer-events-none"
+                unoptimized
+            />
+            {/* Gradient overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/60 to-slate-900 pointer-events-none" />
+            
+            <div className="container mx-auto px-4 lg:px-8 relative z-10">
+                <div className="text-center max-w-2xl mx-auto mb-20">
+                    <div className="inline-flex items-center gap-2 mb-4 justify-center">
+                        <div className="w-8 h-0.5 bg-[#C8A050]"></div>
+                        <span className="text-sm font-bold tracking-widest text-[#C8A050] uppercase">{lang === 'ZH' ? '客户范围' : 'Target Audience'}</span>
+                    </div>
+                    <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight leading-tight">
+                        {t.title}
+                    </h2>
+                    <p className="text-lg text-slate-400 font-medium leading-relaxed">
+                        {t.desc}
+                    </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr max-w-6xl mx-auto">
                     {t.cards.map((card, idx) => {
                         const Icon = card.icon;
                         return (
                             <div 
                                 key={idx} 
-                                className="bg-white rounded-2xl p-8 border border-slate-100 shadow-sm hover:shadow-xl hover:border-[#0b2853]/20 transition-all duration-300 group flex flex-col"
+                                className="bg-white/5 backdrop-blur-md rounded-2xl p-8 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-500 group flex flex-col hover:-translate-y-1 shadow-lg"
                             >
-                                <div className="w-14 h-14 bg-[#0b2853]/5 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#0b2853] transition-colors">
-                                    <Icon className="w-7 h-7 text-[#0b2853] group-hover:text-white transition-colors" />
+                                <div className="w-14 h-14 bg-white/10 rounded-xl flex items-center justify-center mb-8 group-hover:bg-[#C8A050] transition-all duration-500">
+                                    <Icon className="w-7 h-7 text-white transition-colors" />
                                 </div>
-                                <h3 className="text-xl font-bold text-slate-800 mb-3">{card.title}</h3>
-                                <p className="text-slate-600 leading-relaxed font-medium">{card.copy}</p>
+                                <h3 className="text-xl font-bold text-white mb-4 group-hover:text-[#C8A050] transition-colors">{card.title}</h3>
+                                <p className="text-slate-400 leading-relaxed font-medium transition-colors group-hover:text-slate-300">{card.copy}</p>
                             </div>
                         );
                     })}
