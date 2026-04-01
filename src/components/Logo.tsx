@@ -5,10 +5,10 @@ import Image from "next/image";
 export default function Logo({ className }: { className?: string }) {
     return (
         <Image
-            src="/ontheway-b2b-pro/logo_final.png"
+            src="/ontheway-b2b-pro/images/logo_transparent.png"
             alt="On The Way Logo"
             width={320}
-            height={100}
+            height={320}
             className={`${className} object-contain block select-none`}
             style={{ 
                 width: 'auto',
