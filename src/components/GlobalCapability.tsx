@@ -47,7 +47,7 @@ export default function GlobalCapability() {
             <div className="container mx-auto px-4 lg:px-8 max-w-7xl">
                 <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-center">
                     <div className="lg:w-1/2 space-y-8">
-                        <span className="text-sm font-bold tracking-widest text-[#0b2853] uppercase">{t.title}</span>
+                        <span className="text-sm font-bold tracking-widest text-[#0b2853] uppercase">{lang === 'EN' ? 'Global Network' : '全球网络'}</span>
                         <h2 className="text-3xl md:text-5xl font-bold text-slate-900 leading-tight">
                             {t.title}
                         </h2>

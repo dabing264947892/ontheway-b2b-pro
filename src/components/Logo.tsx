@@ -1,29 +1,50 @@
 export default function Logo({ className }: { className?: string }) {
     return (
-        <svg 
-            viewBox="0 0 320 100" 
-            className={className} 
-            xmlns="http://www.w3.org/2000/svg" 
+        <svg
+            viewBox="0 0 380 110"
+            className={className}
+            xmlns="http://www.w3.org/2000/svg"
             preserveAspectRatio="xMidYMid meet"
         >
-            {/* Chunky Red Wings `<` simulating airplane and compass */}
-            <g fill="#E62B22">
-                {/* Upper thick sweep */}
-                <path d="M 100 15 Q 55 15 5 50 L 20 65 Q 65 35 115 35 Z" />
-                {/* Lower thick sweep */}
-                <path d="M 5 50 Q 55 85 105 100 L 90 100 Q 45 80 0 50 Z" />
-                {/* Aero core strut */}
-                <path d="M 20 50 L 105 25 L 95 25 L 12 50 Z" />
+            {/*
+             * Red brand mark: a bold stylized "<" chevron.
+             * Upper arm: sweeps from top-right down to the central tip.
+             * Lower arm: sweeps from the tip back up to the bottom-right.
+             * A curved notch cuts into the upper arm, giving it the
+             * distinctive "R-like" concavity seen in the real logo.
+             */}
+            <g fill="#E8311F">
+                {/* Upper arm of the chevron, with inner curve notch */}
+                <path d="
+                    M 85 8
+                    C 72 8, 55 18, 18 52
+                    L 8 62
+                    L 18 72
+                    C 30 58, 46 42, 58 32
+                    C 50 46, 46 58, 50 72
+                    L 68 72
+                    C 64 58, 68 42, 82 28
+                    C 70 28, 62 22, 66 12
+                    Z
+                " />
+                {/* Lower arm of the chevron */}
+                <path d="
+                    M 8 62
+                    C 30 84, 56 96, 82 100
+                    L 90 100
+                    C 90 100, 60 88, 28 68
+                    Z
+                " />
             </g>
-            {/* ON THE WAY text with modern UI rounded styling */}
+            {/* "ON THE WAY" wordmark in warm gold, rounded font */}
             <text
-                x="110"
-                y="65"
-                fontFamily="ui-rounded, 'Arial Rounded MT Bold', 'Nunito', 'Quicksand', system-ui, sans-serif"
-                fontWeight="800"
-                fontSize="42"
-                letterSpacing="1.2"
-                fill="#C8A86B"
+                x="108"
+                y="73"
+                fontFamily="'Nunito', 'Quicksand', 'Arial Rounded MT Bold', ui-rounded, sans-serif"
+                fontWeight="700"
+                fontSize="46"
+                letterSpacing="2"
+                fill="#C8A050"
             >
                 ON THE WAY
             </text>

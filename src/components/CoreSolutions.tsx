@@ -98,7 +98,7 @@ export default function CoreSolutions() {
         <section id="core-solutions" className="py-24 bg-white">
             <div className="container mx-auto px-4 lg:px-8">
                 <div className="flex flex-col items-start max-w-5xl mx-auto mb-16 space-y-4">
-                    <span className="text-sm font-bold tracking-widest text-[#0b2853] uppercase">{t.title}</span>
+                    <span className="text-sm font-bold tracking-widest text-[#0b2853] uppercase">{lang === 'EN' ? 'Core Services' : '服务模块'}</span>
                     <h2 className="text-3xl md:text-5xl font-bold text-slate-900 border-l-4 border-[#0b2853] pl-6 h-full flex items-center">
                         {t.title}
                     </h2>
