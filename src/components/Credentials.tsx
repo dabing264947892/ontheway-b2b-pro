@@ -88,10 +88,10 @@ export default function Credentials() {
                         <span className="text-sm font-bold tracking-[0.2em] text-emerald-400 uppercase">{lang === 'ZH' ? '资质合规' : 'Trust & Compliance'}</span>
                         <div className="w-12 h-1 bg-gradient-to-l from-emerald-400 to-transparent"></div>
                     </div>
-                    <h2 className="text-5xl md:text-7xl font-extrabold text-white mb-10 tracking-tight leading-[1.1]">
+                    <h2 className="text-[2.2rem] sm:text-5xl md:text-7xl font-extrabold text-white mb-8 md:mb-10 tracking-tight leading-[1.1]">
                         {t.title}
                     </h2>
-                    <p className="text-xl md:text-2xl text-slate-400 font-medium leading-relaxed max-w-4xl mx-auto opacity-90">
+                    <p className="text-lg md:text-2xl text-slate-400 font-medium leading-relaxed max-w-4xl mx-auto opacity-90 px-4 md:px-0">
                         {t.intro}
                     </p>
                 </div>
@@ -100,10 +100,10 @@ export default function Credentials() {
                     {t.cards.map((card, idx) => {
                         const Icon = card.icon;
                         return (
-                            <div key={idx} className="bg-white/5 backdrop-blur-2xl border border-white/10 rounded-[2.5rem] p-12 hover:bg-white/10 hover:border-emerald-400/30 group transition-all duration-500 shadow-2xl relative overflow-hidden flex flex-col">
+                            <div key={idx} className="bg-white/5 backdrop-blur-2xl border border-white/10 rounded-[2rem] md:rounded-[2.5rem] p-8 md:p-12 hover:bg-white/10 hover:border-emerald-400/30 group transition-all duration-500 shadow-2xl relative overflow-hidden flex flex-col">
                                 <div className="absolute top-0 right-0 w-40 h-40 bg-emerald-400/5 blur-3xl pointer-events-none group-hover:bg-emerald-400/10 transition-all duration-700" />
-                                <div className="w-20 h-20 bg-white/5 border border-white/10 rounded-3xl flex items-center justify-center mb-10 shadow-xl group-hover:bg-emerald-400 group-hover:border-emerald-400 transition-all duration-500 group-hover:scale-110 group-hover:rotate-6">
-                                    <Icon className="w-10 h-10 text-white group-hover:text-[#06152B] transition-colors" />
+                                <div className="w-16 h-16 md:w-20 md:h-20 bg-white/5 border border-white/10 rounded-2xl md:rounded-3xl flex items-center justify-center mb-8 md:mb-10 shadow-xl group-hover:bg-emerald-400 group-hover:border-emerald-400 transition-all duration-500 group-hover:scale-110 group-hover:rotate-6">
+                                    <Icon className="w-8 h-8 md:w-10 md:h-10 text-white group-hover:text-[#06152B] transition-colors" />
                                 </div>
                                 <h3 className="text-2xl font-extrabold text-white mb-5 group-hover:text-emerald-400 transition-colors leading-tight tracking-tight">{card.name}</h3>
                                 <p className="text-slate-400 leading-relaxed font-medium group-hover:text-slate-200 transition-colors text-sm flex-1">{card.desc}</p>
@@ -123,11 +123,11 @@ export default function Credentials() {
                         alt="Global Business Trust"
                         className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-r from-[#06152B]/95 via-[#06152B]/70 to-transparent" />
-                    <div className="absolute inset-0 flex flex-col justify-center p-10 md:p-16 max-w-3xl">
-                        <h3 className="text-white text-3xl md:text-4xl font-extrabold mb-3 tracking-tight drop-shadow-xl">{t.bannerTitle}</h3>
-                        <p className="text-slate-300 text-lg max-w-xl mb-6 font-medium">{t.bannerDesc}</p>
-                        <a href="#contact" className="inline-flex items-center gap-2 px-7 py-3 bg-emerald-500/20 hover:bg-emerald-500/30 border border-emerald-500/30 hover:border-emerald-400/50 text-emerald-300 font-bold rounded-xl transition-all w-fit text-sm backdrop-blur-md">
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#06152B]/95 via-[#06152B]/70 to-[#06152B]/30 md:to-transparent" />
+                    <div className="absolute inset-0 flex flex-col justify-center p-8 md:p-16 max-w-3xl">
+                        <h3 className="text-white text-2xl md:text-4xl font-extrabold mb-3 tracking-tight drop-shadow-xl leading-tight">{t.bannerTitle}</h3>
+                        <p className="text-slate-300 text-base md:text-lg max-w-xl mb-6 font-medium line-clamp-2 md:line-clamp-none">{t.bannerDesc}</p>
+                        <a href="#contact" className="inline-flex items-center gap-2 px-6 py-2.5 md:px-7 md:py-3 bg-emerald-500/20 hover:bg-emerald-500/30 border border-emerald-500/30 hover:border-emerald-400/50 text-emerald-300 font-bold rounded-xl transition-all w-fit text-xs md:text-sm backdrop-blur-md">
                             {t.bannerCta}
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                         </a>

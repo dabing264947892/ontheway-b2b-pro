@@ -62,10 +62,10 @@ export default function WhoWeServe() {
                         <span className="text-sm font-bold tracking-[0.2em] text-[#C8A050] uppercase">{lang === 'ZH' ? '客户范围' : 'Target Audience'}</span>
                         <div className="w-12 h-1 bg-gradient-to-l from-[#C8A050] to-transparent"></div>
                     </div>
-                    <h2 className="text-5xl md:text-7xl font-extrabold text-white mb-10 tracking-tight leading-[1.1]">
+                    <h2 className="text-[2.5rem] sm:text-5xl md:text-7xl font-extrabold text-white mb-8 md:mb-10 tracking-tight leading-[1.1]">
                         {t.title}
                     </h2>
-                    <p className="text-xl md:text-2xl text-slate-400 font-medium leading-relaxed max-w-4xl mx-auto opacity-90">
+                    <p className="text-lg md:text-2xl text-slate-400 font-medium leading-relaxed max-w-4xl mx-auto opacity-90 px-4 md:px-0">
                         {t.desc}
                     </p>
                 </div>
@@ -76,7 +76,7 @@ export default function WhoWeServe() {
                         return (
                             <div
                                 key={idx}
-                                className="bg-white/5 backdrop-blur-2xl rounded-[2.5rem] p-10 border border-white/10 hover:bg-white/10 hover:border-[#C8A050]/30 transition-all duration-500 group flex flex-col hover:-translate-y-2 shadow-xl relative overflow-hidden"
+                                className="bg-white/5 backdrop-blur-2xl rounded-[2rem] md:rounded-[2.5rem] p-7 md:p-10 border border-white/10 hover:bg-white/10 hover:border-[#C8A050]/30 transition-all duration-500 group flex flex-col hover:-translate-y-2 shadow-xl relative overflow-hidden"
                             >
                                 <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-[#C8A050]/5 blur-3xl pointer-events-none group-hover:bg-[#C8A050]/10 transition-all duration-700" />
                                 <div className="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center mb-10 group-hover:bg-[#C8A050] transition-all duration-500 group-hover:scale-110 group-hover:rotate-6 shadow-lg border border-white/10">
@@ -100,11 +100,11 @@ export default function WhoWeServe() {
                         alt="Global B2B Travel Partners"
                         className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-r from-[#0b2853]/90 via-[#0b2853]/60 to-transparent" />
-                    <div className="absolute inset-0 flex flex-col justify-center p-10 md:p-16 max-w-3xl">
-                        <h3 className="text-white text-3xl md:text-4xl font-extrabold mb-4 tracking-tight drop-shadow-xl">{t.bannerTitle}</h3>
-                        <p className="text-slate-300 text-lg max-w-xl mb-8 font-medium">{t.bannerDesc}</p>
-                        <a href="#contact" className="inline-flex items-center gap-2 px-8 py-3.5 bg-[#C8A050] hover:bg-[#d4b06a] text-[#0b2853] font-bold rounded-xl transition-all w-fit text-base shadow-lg hover:shadow-[#C8A050]/30 hover:shadow-xl hover:-translate-y-0.5">
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#0b2853]/95 via-[#0b2853]/70 to-[#0b2853]/30 md:to-transparent" />
+                    <div className="absolute inset-0 flex flex-col justify-center p-8 md:p-16 max-w-3xl">
+                        <h3 className="text-white text-2xl md:text-4xl font-extrabold mb-3 md:mb-4 tracking-tight drop-shadow-xl leading-tight">{t.bannerTitle}</h3>
+                        <p className="text-slate-300 text-base md:text-lg max-w-xl mb-6 md:mb-8 font-medium line-clamp-2 md:line-clamp-none">{t.bannerDesc}</p>
+                        <a href="#contact" className="inline-flex items-center gap-2 px-6 md:px-8 py-3 md:py-3.5 bg-[#C8A050] hover:bg-[#d4b06a] text-[#0b2853] font-bold rounded-xl transition-all w-fit text-sm md:text-base shadow-lg hover:shadow-[#C8A050]/30 hover:shadow-xl hover:-translate-y-0.5">
                             {t.bannerCta}
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                         </a>

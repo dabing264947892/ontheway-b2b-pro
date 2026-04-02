@@ -131,7 +131,7 @@ export default function CoreSolutions() {
                         <div className="w-12 h-1 bg-gradient-to-r from-[#E8311F] to-transparent"></div>
                         <span className="text-sm font-bold tracking-[0.2em] text-[#E8311F] uppercase">{lang === 'ZH' ? '服务模块' : 'Core Services'}</span>
                     </div>
-                    <h2 className="text-5xl md:text-7xl font-extrabold text-slate-900 leading-[1.1] tracking-tight">
+                    <h2 className="text-[2.5rem] sm:text-5xl md:text-7xl font-extrabold text-slate-900 leading-[1.1] tracking-tight">
                         {t.title}
                     </h2>
                     <p className="text-lg text-slate-500 max-w-2xl font-medium">
@@ -145,7 +145,7 @@ export default function CoreSolutions() {
                         return (
                             <div
                                 key={sol.id}
-                                className={`group p-10 md:p-12 rounded-[2.5rem] border border-slate-100 bg-slate-50/50 hover:bg-white hover:shadow-[0_40px_80px_-15px_rgba(11,40,83,0.12)] transition-all duration-500 relative overflow-hidden cursor-default ${index === 4 ? 'lg:col-span-2' : ''}`}
+                                className={`group p-8 md:p-12 rounded-[2rem] md:rounded-[2.5rem] border border-slate-100 bg-slate-50/50 hover:bg-white hover:shadow-[0_40px_80px_-15px_rgba(11,40,83,0.12)] transition-all duration-500 relative overflow-hidden cursor-default ${index === 4 ? 'lg:col-span-2' : ''}`}
                             >
                                 {/* Background image for each card — appears on hover */}
                                 <div className="absolute inset-0 z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none">
@@ -164,13 +164,13 @@ export default function CoreSolutions() {
                                 {/* Subtle accent glow on hover */}
                                 <div className="absolute -bottom-12 -right-12 w-40 h-40 bg-slate-200/0 group-hover:bg-blue-100/40 rounded-full blur-3xl transition-all duration-700 -z-10" />
 
-                                <div className="flex items-start gap-8 mb-12 relative z-10">
-                                    <div className="shrink-0 w-20 h-20 bg-[#0b2853]/5 rounded-[1.5rem] flex items-center justify-center group-hover:bg-[#0b2853] transition-all duration-500 group-hover:scale-110 group-hover:rotate-6 shadow-sm">
-                                        <Icon className="w-10 h-10 text-[#0b2853] group-hover:text-white transition-colors" />
+                                <div className="flex flex-col sm:flex-row items-start gap-5 md:gap-8 mb-10 md:mb-12 relative z-10">
+                                    <div className="shrink-0 w-16 h-16 md:w-20 md:h-20 bg-[#0b2853]/5 rounded-[1.2rem] md:rounded-[1.5rem] flex items-center justify-center group-hover:bg-[#0b2853] transition-all duration-500 group-hover:scale-110 group-hover:rotate-6 shadow-sm">
+                                        <Icon className="w-8 h-8 md:w-10 md:h-10 text-[#0b2853] group-hover:text-white transition-colors" />
                                     </div>
                                     <div>
-                                        <h3 className="text-3xl font-extrabold text-slate-900 mb-4 group-hover:text-[#0b2853] transition-colors tracking-tight">{sol.title}</h3>
-                                        <p className="text-slate-600 leading-relaxed max-w-xl text-lg font-medium opacity-80">{sol.desc}</p>
+                                        <h3 className="text-xl md:text-3xl font-extrabold text-slate-900 mb-3 md:mb-4 group-hover:text-[#0b2853] transition-colors tracking-tight leading-tight">{sol.title}</h3>
+                                        <p className="text-slate-600 leading-relaxed max-w-xl text-base md:text-lg font-medium opacity-80">{sol.desc}</p>
                                     </div>
                                 </div>
                                 <div className={`grid grid-cols-1 ${index === 4 ? 'md:grid-cols-3' : 'md:grid-cols-2'} gap-4 pt-6 border-t border-slate-200/60 relative z-10`}>

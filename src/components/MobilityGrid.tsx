@@ -53,20 +53,20 @@ export default function MobilityGrid() {
                         <span className="text-xs font-bold tracking-[0.2em] text-[#C8A050] uppercase">{lang === 'ZH' ? '航空直连能力' : 'Aviation Connectivity'}</span>
                         <div className="w-8 h-0.5 bg-[#C8A050]" />
                     </div>
-                    <h2 className="text-4xl lg:text-5xl font-extrabold text-white tracking-tight">{t.title}</h2>
+                    <h2 className="text-[2.2rem] sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">{t.title}</h2>
                     <p className="mt-4 text-slate-400 max-w-2xl mx-auto text-lg font-medium">
                         {t.desc}
                     </p>
                 </div>
 
                 {/* Aviation Image Banner */}
-                <div className="w-full rounded-[2rem] overflow-hidden mb-14 relative shadow-2xl shadow-black/40 group cursor-default bg-slate-900" style={{ height: '340px' }}>
+                <div className="w-full rounded-[2rem] overflow-hidden mb-14 relative shadow-2xl shadow-black/40 group cursor-default bg-slate-900 h-[280px] md:h-[340px]">
                     <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=100&w=2500&auto=format&fit=crop" alt="Aviation Network" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#071428]/90 via-[#071428]/30 to-transparent flex flex-col justify-end p-8 md:p-14">
-                        <div className="flex items-end gap-6">
+                        <div className="flex flex-col md:flex-row md:items-end gap-4 md:gap-6">
                             <div>
-                                <h3 className="text-white text-3xl md:text-5xl font-extrabold drop-shadow-xl mb-4 tracking-tight">{t.bannerTitle}</h3>
-                                <p className="text-slate-300 text-lg md:text-xl max-w-xl font-medium">{t.bannerDesc}</p>
+                                <h3 className="text-white text-2xl sm:text-3xl md:text-5xl font-extrabold drop-shadow-xl mb-3 md:mb-4 tracking-tight leading-tight">{t.bannerTitle}</h3>
+                                <p className="text-slate-300 text-base md:text-xl max-w-xl font-medium leading-relaxed">{t.bannerDesc}</p>
                             </div>
                             <div className="hidden md:flex items-center gap-3 ml-auto mb-1 shrink-0">
                                 <div className="text-center px-5 py-3 bg-white/10 backdrop-blur-md rounded-xl border border-white/10">
@@ -86,8 +86,8 @@ export default function MobilityGrid() {
                     </div>
                 </div>
 
-                <div className="grid md:grid-cols-3 gap-6">
-                    <div className="bg-white/[0.04] border border-white/10 rounded-[2rem] p-10 hover:bg-white/[0.08] hover:border-white/20 hover:-translate-y-2 transition-all duration-500 group backdrop-blur-sm">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div className="bg-white/[0.04] border border-white/10 rounded-[2rem] p-8 md:p-10 hover:bg-white/[0.08] hover:border-white/20 hover:-translate-y-2 transition-all duration-500 group backdrop-blur-sm">
                         <div className="w-16 h-16 bg-blue-500/10 rounded-2xl flex items-center justify-center mb-8 text-blue-400 group-hover:bg-blue-500/20 transition-all duration-500">
                             <PlaneTakeoff className="w-8 h-8" />
                         </div>
@@ -114,7 +114,7 @@ export default function MobilityGrid() {
                         </div>
                     </div>
 
-                    <div className="bg-white/[0.04] border border-white/10 rounded-[2rem] p-10 hover:bg-white/[0.08] hover:border-white/20 hover:-translate-y-2 transition-all duration-500 group backdrop-blur-sm">
+                    <div className="bg-white/[0.04] border border-white/10 rounded-[2rem] p-8 md:p-10 hover:bg-white/[0.08] hover:border-white/20 hover:-translate-y-2 transition-all duration-500 group backdrop-blur-sm relative overflow-hidden">
                         <div className="w-16 h-16 bg-emerald-500/10 rounded-2xl flex items-center justify-center mb-8 text-emerald-400 group-hover:bg-emerald-500/20 transition-all duration-500">
                             <Users className="w-8 h-8" />
                         </div>

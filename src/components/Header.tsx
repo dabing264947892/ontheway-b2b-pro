@@ -46,11 +46,11 @@ export default function Header() {
             <div className="container mx-auto px-4 lg:px-8 h-24 flex items-center justify-between">
                 {/* Logo */}
                 <Link href="/" className="flex items-center relative z-10 transition-transform hover:scale-105 shrink-0">
-                    <Logo className="h-20 md:h-24" />
+                    <Logo className="h-[4.5rem] md:h-24" />
                 </Link>
 
                 {/* Desktop Navigation */}
-                <nav className="hidden xl:flex items-center gap-8 text-[14px] font-bold text-slate-600">
+                <nav className="hidden xl:flex items-center gap-8 text-[15px] font-medium text-slate-600">
                     <Link href="#who-we-serve" className="hover:text-[#0b2853] transition-all hover:-translate-y-0.5">{t.serve}</Link>
                     <Link href="#core-solutions" className="hover:text-[#0b2853] transition-all hover:-translate-y-0.5">{t.solutions}</Link>
                     <Link href="#mobility" className="hover:text-[#0b2853] transition-all hover:-translate-y-0.5">{t.aviation}</Link>
@@ -95,27 +95,27 @@ export default function Header() {
 
             {/* Mobile Menu Overlay */}
             {isMenuOpen && (
-                <div className="lg:hidden absolute top-full left-0 w-full h-[calc(100vh-80px)] bg-white flex flex-col pt-8 px-6 overflow-y-auto font-medium z-50">
-                    <nav className="flex flex-col gap-6 text-xl text-slate-800 mb-12">
-                        <Link href="#who-we-serve" onClick={() => setIsMenuOpen(false)} className="pb-4 border-b border-slate-100">{t.serve}</Link>
-                        <Link href="#core-solutions" onClick={() => setIsMenuOpen(false)} className="pb-4 border-b border-slate-100">{t.solutions}</Link>
-                        <Link href="#mobility" onClick={() => setIsMenuOpen(false)} className="pb-4 border-b border-slate-100">{t.aviation}</Link>
-                        <Link href="#supply" onClick={() => setIsMenuOpen(false)} className="pb-4 border-b border-slate-100">{t.supply}</Link>
-                        <Link href="#credentials" onClick={() => setIsMenuOpen(false)} className="pb-4 border-b border-slate-100">{t.credentials}</Link>
+                <div className="lg:hidden absolute top-full left-0 w-full h-[calc(100vh-96px)] bg-white flex flex-col pt-6 px-6 overflow-y-auto font-medium z-50">
+                    <nav className="flex flex-col gap-4 text-lg text-slate-800 mb-10">
+                        <Link href="#who-we-serve" onClick={() => setIsMenuOpen(false)} className="pb-3 border-b border-slate-100">{t.serve}</Link>
+                        <Link href="#core-solutions" onClick={() => setIsMenuOpen(false)} className="pb-3 border-b border-slate-100">{t.solutions}</Link>
+                        <Link href="#mobility" onClick={() => setIsMenuOpen(false)} className="pb-3 border-b border-slate-100">{t.aviation}</Link>
+                        <Link href="#supply" onClick={() => setIsMenuOpen(false)} className="pb-3 border-b border-slate-100">{t.supply}</Link>
+                        <Link href="#credentials" onClick={() => setIsMenuOpen(false)} className="pb-3 border-b border-slate-100">{t.credentials}</Link>
                     </nav>
 
-                    <div className="flex flex-col gap-4 mt-auto pb-12">
+                    <div className="flex flex-col gap-3 mt-auto pb-10">
                         <button
                             onClick={toggleLang}
-                            className="flex items-center justify-center gap-2 text-lg text-slate-600 bg-slate-50 py-4 rounded-xl border border-slate-200 active:bg-slate-100 transition-colors"
+                            className="flex items-center justify-center gap-2 text-base text-slate-600 bg-slate-50 py-3.5 rounded-xl border border-slate-200 active:bg-slate-100 transition-colors"
                         >
-                            <Globe className="w-5 h-5" />
+                            <Globe className="w-4 h-4" />
                             {lang === "EN" ? "Switch to 中文" : "切换为 English"}
                         </button>
-                        <Link href="#login" onClick={() => setIsMenuOpen(false)} className="flex items-center justify-center bg-emerald-50 text-emerald-700 py-4 rounded-xl text-lg font-bold border border-emerald-200 transition-colors">
+                        <Link href="#login" onClick={() => setIsMenuOpen(false)} className="flex items-center justify-center bg-emerald-50 text-emerald-700 py-3.5 rounded-xl text-base font-bold border border-emerald-200 transition-colors">
                             {t.login}
                         </Link>
-                        <Link href="#contact" onClick={() => setIsMenuOpen(false)} className="flex items-center justify-center bg-[#0b2853] active:bg-[#153a73] text-white py-4 rounded-xl text-lg font-bold shadow-lg shadow-[#0b2853]/20 transition-colors">
+                        <Link href="#contact" onClick={() => setIsMenuOpen(false)} className="flex items-center justify-center bg-[#0b2853] active:bg-[#153a73] text-white py-3.5 rounded-xl text-base font-bold shadow-lg shadow-[#0b2853]/20 transition-colors">
                             {t.contact}
                         </Link>
                     </div>

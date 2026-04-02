@@ -43,7 +43,7 @@ export default function HeroSection() {
     const t = text[lang];
 
     return (
-        <section id="home" className="relative pt-32 pb-24 md:pt-48 md:pb-36 overflow-hidden bg-[#0a1930]">
+        <section id="home" className="relative pt-28 pb-16 md:pt-48 md:pb-36 overflow-hidden bg-[#0a1930]">
             {/* Background Image */}
             <Image
                 src={heroBg}
@@ -68,7 +68,7 @@ export default function HeroSection() {
                         {t.eyebrow}
                     </div>
 
-                    <h1 className="text-5xl md:text-7xl lg:text-[5.5rem] font-extrabold tracking-tight leading-[0.95] text-white">
+                    <h1 className="text-[2.4rem] sm:text-5xl md:text-7xl lg:text-[5.5rem] font-extrabold tracking-tight leading-[1.0] md:leading-[0.95] text-white">
                         <span className="block mb-4">{t.title1}</span>
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-emerald-300 to-blue-500 drop-shadow-2xl">
                             {t.title2}
@@ -97,24 +97,24 @@ export default function HeroSection() {
 
                     {/* Trust Bar */}
                     <div className="mt-16 pt-10 border-t border-white/10 max-w-4xl mx-auto">
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm font-semibold text-slate-300">
-                            <div className="flex items-center justify-center gap-3 bg-white/[0.04] py-5 px-4 rounded-2xl backdrop-blur-sm border border-white/[0.06] hover:bg-white/[0.07] transition-colors group">
-                                <div className="w-8 h-8 bg-emerald-500/15 rounded-lg flex items-center justify-center group-hover:bg-emerald-500/25 transition-colors">
-                                    <Activity className="w-4 h-4 text-emerald-400" />
+                        <div className="grid grid-cols-3 gap-2 md:gap-4 text-sm font-semibold text-slate-300">
+                            <div className="flex flex-col md:flex-row items-center justify-center gap-1 md:gap-3 bg-white/[0.04] py-3 md:py-5 px-2 md:px-4 rounded-xl md:rounded-2xl backdrop-blur-sm border border-white/[0.06] hover:bg-white/[0.07] transition-colors group">
+                                <div className="w-7 h-7 md:w-8 md:h-8 bg-emerald-500/15 rounded-lg flex items-center justify-center group-hover:bg-emerald-500/25 transition-colors shrink-0">
+                                    <Activity className="w-3.5 h-3.5 md:w-4 md:h-4 text-emerald-400" />
                                 </div>
-                                <span className="text-white font-bold">{t.trust.uptime}</span>
+                                <span className="text-white font-bold text-[10px] md:text-sm text-center leading-tight">{t.trust.uptime}</span>
                             </div>
-                            <div className="flex items-center justify-center gap-3 bg-white/[0.04] py-5 px-4 rounded-2xl backdrop-blur-sm border border-white/[0.06] hover:bg-white/[0.07] transition-colors group">
-                                <div className="w-8 h-8 bg-blue-500/15 rounded-lg flex items-center justify-center group-hover:bg-blue-500/25 transition-colors">
-                                    <Zap className="w-4 h-4 text-blue-400" />
+                            <div className="flex flex-col md:flex-row items-center justify-center gap-1 md:gap-3 bg-white/[0.04] py-3 md:py-5 px-2 md:px-4 rounded-xl md:rounded-2xl backdrop-blur-sm border border-white/[0.06] hover:bg-white/[0.07] transition-colors group">
+                                <div className="w-7 h-7 md:w-8 md:h-8 bg-blue-500/15 rounded-lg flex items-center justify-center group-hover:bg-blue-500/25 transition-colors shrink-0">
+                                    <Zap className="w-3.5 h-3.5 md:w-4 md:h-4 text-blue-400" />
                                 </div>
-                                <span className="text-white font-bold">{t.trust.response}</span>
+                                <span className="text-white font-bold text-[10px] md:text-sm text-center leading-tight">{t.trust.response}</span>
                             </div>
-                            <div className="flex items-center justify-center gap-3 bg-white/[0.04] py-5 px-4 rounded-2xl backdrop-blur-sm border border-white/[0.06] hover:bg-white/[0.07] transition-colors group">
-                                <div className="w-8 h-8 bg-purple-500/15 rounded-lg flex items-center justify-center group-hover:bg-purple-500/25 transition-colors">
-                                    <Layers className="w-4 h-4 text-purple-400" />
+                            <div className="flex flex-col md:flex-row items-center justify-center gap-1 md:gap-3 bg-white/[0.04] py-3 md:py-5 px-2 md:px-4 rounded-xl md:rounded-2xl backdrop-blur-sm border border-white/[0.06] hover:bg-white/[0.07] transition-colors group">
+                                <div className="w-7 h-7 md:w-8 md:h-8 bg-purple-500/15 rounded-lg flex items-center justify-center group-hover:bg-purple-500/25 transition-colors shrink-0">
+                                    <Layers className="w-3.5 h-3.5 md:w-4 md:h-4 text-purple-400" />
                                 </div>
-                                <span className="text-white font-bold">{t.trust.aggregation}</span>
+                                <span className="text-white font-bold text-[10px] md:text-sm text-center leading-tight">{t.trust.aggregation}</span>
                             </div>
                         </div>
                     </div>

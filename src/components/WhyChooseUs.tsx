@@ -45,7 +45,7 @@ export default function WhyChooseUs() {
     const t = text[lang];
 
     return (
-        <section className="py-28 bg-[#0b2853] relative overflow-hidden">
+        <section className="py-20 md:py-28 bg-[#0b2853] relative overflow-hidden">
             {/* HUD Grid */}
             <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.025)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.025)_1px,transparent_1px)] bg-[size:60px_60px] pointer-events-none" />
             {/* Corner glow accents */}
@@ -61,12 +61,12 @@ export default function WhyChooseUs() {
                             <div className="w-8 h-0.5 bg-[#C8A050]"></div>
                             <span className="text-sm font-bold tracking-widest text-[#C8A050] uppercase">{lang === 'EN' ? 'Our Advantages' : '核心优势'}</span>
                         </div>
-                        <h2 className="text-3xl md:text-5xl font-extrabold text-white leading-tight tracking-tight">
+                        <h2 className="text-[1.8rem] sm:text-3xl md:text-5xl font-extrabold text-white leading-tight tracking-tight">
                             {t.title}
                         </h2>
                     </div>
                     <div className="md:w-2/3 border-l md:border-l-2 border-white/10 pl-6 md:pl-12">
-                        <p className="text-xl text-slate-300 leading-relaxed font-medium">
+                        <p className="text-lg md:text-xl text-slate-300 leading-relaxed font-medium">
                             {t.intro}
                         </p>
                     </div>
@@ -77,9 +77,9 @@ export default function WhyChooseUs() {
                         const Icon = card.icon;
                         const colors = colorMap[card.color];
                         return (
-                            <div
+                             <div
                                 key={idx}
-                                className={`bg-white/[0.04] border border-white/10 p-8 rounded-2xl hover:bg-white/[0.08] hover:-translate-y-1 transition-all duration-400 group relative overflow-hidden ${colors.border}`}
+                                className={`bg-white/[0.04] border border-white/10 p-6 md:p-8 rounded-2xl hover:bg-white/[0.08] hover:-translate-y-1 transition-all duration-400 group relative overflow-hidden ${colors.border}`}
                             >
                                 <div className={`absolute -top-10 -right-10 w-32 h-32 rounded-full blur-3xl transition-all duration-700 ${colors.glow}`} />
                                 <div className={`w-12 h-12 ${colors.bg} rounded-xl flex items-center justify-center mb-6`}>

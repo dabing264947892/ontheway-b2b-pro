@@ -72,7 +72,7 @@ export default function GlobalFares() {
     const t = text[lang];
 
     return (
-        <section id="global-fares" className="py-24 bg-[#051630] border-t border-white/10 relative overflow-hidden">
+        <section id="global-fares" className="section-padding bg-[#051630] border-t border-white/10 relative overflow-hidden">
             {/* Animated grid */}
             <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.025)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.025)_1px,transparent_1px)] bg-[size:64px_64px] [mask-image:radial-gradient(ellipse_80%_80%_at_50%_50%,#000_20%,transparent_100%)] pointer-events-none" />
             {/* Radial glow */}
@@ -87,22 +87,22 @@ export default function GlobalFares() {
                             <div className="w-8 h-0.5 bg-emerald-400"></div>
                             <span className="text-sm font-bold tracking-widest text-emerald-400 uppercase">{t.title}</span>
                         </div>
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
+                        <h2 className="text-[1.8rem] sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
                             {t.h2}
                         </h2>
                         <div className="w-16 h-1 bg-emerald-500 rounded" />
-                        <p className="text-lg md:text-xl text-slate-300 leading-relaxed font-medium">
+                        <p className="text-base md:text-xl text-slate-300 leading-relaxed font-medium">
                             {t.desc}
                         </p>
                         {/* Stat highlight */}
-                        <div className="flex items-center gap-6 pt-4">
-                            <div className="text-center">
-                                <div className="text-6xl font-black text-emerald-400 leading-none">{t.stat}</div>
-                                <div className="text-xs text-slate-400 font-bold tracking-widest uppercase mt-2">{t.statLabel}</div>
-                                <div className="text-slate-500 text-sm mt-1">{t.statDesc}</div>
+                        <div className="flex flex-col sm:flex-row items-center gap-6 pt-4">
+                            <div className="text-center sm:text-left">
+                                <div className="text-5xl sm:text-6xl font-black text-emerald-400 leading-none">{t.stat}</div>
+                                <div className="text-[10px] sm:text-xs text-slate-400 font-bold tracking-widest uppercase mt-2">{t.statLabel}</div>
+                                <div className="text-slate-500 text-xs sm:text-sm mt-1">{t.statDesc}</div>
                             </div>
-                            <div className="w-px h-20 bg-white/10" />
-                            <div className="text-slate-400 text-sm leading-relaxed italic max-w-xs font-medium">
+                            <div className="hidden sm:block w-px h-20 bg-white/10" />
+                            <div className="text-slate-400 text-sm leading-relaxed italic max-w-xs font-medium text-center sm:text-left">
                                 {lang === 'ZH' ? '全球仅有少数平台具备真正意义上的多点出票与境外结算能力。' : 'Only a handful of platforms worldwide offer genuine multi-POS ticketing and cross-border settlement at scale.'}
                             </div>
                         </div>

@@ -21,7 +21,7 @@ export default function BrandIntro() {
     const t = text[lang];
 
     return (
-        <section className="py-24 bg-white relative overflow-hidden">
+        <section className="section-padding bg-white relative overflow-hidden">
             <div className="container mx-auto px-4 lg:px-8 max-w-7xl">
                 <div className="flex flex-col lg:flex-row items-center gap-16">
                     <div className="lg:w-1/2 order-2 lg:order-1 relative">
@@ -48,7 +48,7 @@ export default function BrandIntro() {
                                 <div className="w-8 h-0.5 bg-[#E8311F]"></div>
                                 <span className="text-sm font-bold tracking-widest text-[#E8311F] uppercase">{lang === 'ZH' ? '品牌背景' : 'Brand Overview'}</span>
                             </div>
-                            <h2 className="text-5xl md:text-6xl font-extrabold text-slate-900 leading-[1.1]">
+                            <h2 className="text-[2.2rem] sm:text-5xl md:text-6xl font-extrabold text-slate-900 leading-[1.1]">
                                 {t.title}
                             </h2>
                             <div className="w-20 h-1.5 bg-[#E8311F] rounded-full"></div>
