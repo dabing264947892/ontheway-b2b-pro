@@ -32,7 +32,10 @@ export default function GlobalFares() {
                     title: "Risk Mitigation",
                     desc: "Secure compliance framework for international transactions."
                 }
-            ]
+            ],
+            statLabel: "Local POS Configurations",
+            stat: "13+",
+            statDesc: "Spanning APAC, Americas & EMEA"
         },
         ZH: {
             title: "全球结算优势",
@@ -59,7 +62,10 @@ export default function GlobalFares() {
                     title: "风控与合规保障",
                     desc: "为海量跨区交易提供坚实的全球风控与合规框架。"
                 }
-            ]
+            ],
+            statLabel: "本地出票点配置",
+            stat: "13+",
+            statDesc: "覆盖亚太、美洲与欧洲"
         }
     };
 
@@ -67,14 +73,16 @@ export default function GlobalFares() {
 
     return (
         <section id="global-fares" className="py-24 bg-[#051630] border-t border-white/10 relative overflow-hidden">
-            {/* Background Map / Tech Grid Effect */}
-            <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:64px_64px] [mask-image:radial-gradient(ellipse_60%_60%_at_50%_50%,#000_20%,transparent_100%)] opacity-20 pointer-events-none" />
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-blue-500/10 rounded-full blur-[120px] pointer-events-none" />
+            {/* Animated grid */}
+            <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.025)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.025)_1px,transparent_1px)] bg-[size:64px_64px] [mask-image:radial-gradient(ellipse_80%_80%_at_50%_50%,#000_20%,transparent_100%)] pointer-events-none" />
+            {/* Radial glow */}
+            <div className="absolute top-1/2 left-1/4 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-emerald-500/8 rounded-full blur-[120px] pointer-events-none" />
+            <div className="absolute top-1/2 right-1/4 translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-blue-500/8 rounded-full blur-[100px] pointer-events-none" />
 
             <div className="container mx-auto px-4 lg:px-8 max-w-7xl relative z-10">
                 <div className="flex flex-col lg:flex-row gap-16 items-center">
                     {/* Left Typography */}
-                    <div className="lg:w-1/2 space-y-6">
+                    <div className="lg:w-1/2 space-y-8">
                         <div className="inline-flex items-center gap-2">
                             <div className="w-8 h-0.5 bg-emerald-400"></div>
                             <span className="text-sm font-bold tracking-widest text-emerald-400 uppercase">{t.title}</span>
@@ -82,22 +90,34 @@ export default function GlobalFares() {
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
                             {t.h2}
                         </h2>
-                        <div className="w-16 h-1 lg:h-1.5 bg-emerald-500 rounded my-8"></div>
+                        <div className="w-16 h-1 bg-emerald-500 rounded" />
                         <p className="text-lg md:text-xl text-slate-300 leading-relaxed font-medium">
                             {t.desc}
                         </p>
+                        {/* Stat highlight */}
+                        <div className="flex items-center gap-6 pt-4">
+                            <div className="text-center">
+                                <div className="text-6xl font-black text-emerald-400 leading-none">{t.stat}</div>
+                                <div className="text-xs text-slate-400 font-bold tracking-widest uppercase mt-2">{t.statLabel}</div>
+                                <div className="text-slate-500 text-sm mt-1">{t.statDesc}</div>
+                            </div>
+                            <div className="w-px h-20 bg-white/10" />
+                            <div className="text-slate-400 text-sm leading-relaxed italic max-w-xs font-medium">
+                                {lang === 'ZH' ? '全球仅有少数平台具备真正意义上的多点出票与境外结算能力。' : 'Only a handful of platforms worldwide offer genuine multi-POS ticketing and cross-border settlement at scale.'}
+                            </div>
+                        </div>
                     </div>
 
                     {/* Right Grid */}
-                    <div className="lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
+                    <div className="lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-5 w-full">
                         {t.features.map((feature, idx) => {
                             const Icon = feature.icon;
                             return (
-                                <div key={idx} className="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-md hover:bg-white/10 transition-colors">
-                                    <div className="w-12 h-12 bg-emerald-500/20 rounded-xl flex items-center justify-center mb-6">
+                                <div key={idx} className="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-md hover:bg-white/10 hover:border-emerald-500/20 transition-all duration-300 group">
+                                    <div className="w-12 h-12 bg-emerald-500/15 rounded-xl flex items-center justify-center mb-5 group-hover:bg-emerald-500/30 transition-colors">
                                         <Icon className="w-6 h-6 text-emerald-400" />
                                     </div>
-                                    <h3 className="text-xl font-bold text-white mb-2">{feature.title}</h3>
+                                    <h3 className="text-xl font-bold text-white mb-2 group-hover:text-emerald-300 transition-colors">{feature.title}</h3>
                                     <p className="text-slate-400 text-sm leading-relaxed">{feature.desc}</p>
                                 </div>
                             );

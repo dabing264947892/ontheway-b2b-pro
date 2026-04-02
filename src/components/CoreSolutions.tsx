@@ -4,7 +4,13 @@ import { useLanguage } from "@/context/LanguageContext";
 import { Plane, Bed, UsersRound, Car, CodeSquare, CheckCircle2 } from "lucide-react";
 import Image from "next/image";
 
-const hotelVisual = "/ontheway-b2b-pro/images/tech_hotel_v2.png";
+const cardVisuals = [
+    "/ontheway-b2b-pro/images/tech_aviation_v2.png",
+    "/ontheway-b2b-pro/images/tech_hotel_v2.png",
+    "/ontheway-b2b-pro/images/group_mice_bg.png",
+    "/ontheway-b2b-pro/images/ground_transport_bg.png",
+    "/ontheway-b2b-pro/images/digital_system_bg.png",
+];
 
 export default function CoreSolutions() {
     const { lang } = useLanguage();
@@ -18,34 +24,39 @@ export default function CoreSolutions() {
                     title: "Unified Aviation API: Seamless GDS, NDC & LCC Integration",
                     desc: "Delivering structured, actionable fare data. Bypass technical fragmentation with our standardized API, designed for rapid deployment, automated order management, and multi-source pricing optimization.",
                     icon: Plane,
+                    accentColor: "from-blue-500/20 to-transparent",
                     points: ["Multi-source air content", "Direct airline connectivity and NDC capability", "Corporate fare and agreement support", "International distribution access", "Suitable for group and complex itineraries", "Backed by broader group-level resource coordination"]
                 },
                 {
                     id: "hotel",
                     title: "Strategic B2B Accommodation & Global Mobility",
-                    desc: "Harnessing Group-level synergy to provide integrated accommodation solutions. Access 3,000,000+ global properties with real-time dynamic distribution, ensuring resource consistency and reliable fulfillment across markets.",
+                    desc: "Harnessing Group-level synergy to provide integrated accommodation solutions. Access 3,000,000+ global properties with real-time dynamic distribution, ensuring resource consistency and reliable fulfillment.",
                     icon: Bed,
+                    accentColor: "from-amber-500/20 to-transparent",
                     points: ["Global resource synergy", "Market-leading inventory availability", "Integrated supplier management", "Consistency in service standards", "Optimized for corporate and project-based stays"]
                 },
                 {
                     id: "group",
                     title: "Group Travel & MICE",
-                    desc: "Flexible support for corporate groups, delegations, business visits, meetings and incentive travel.",
+                    desc: "Flexible support for corporate groups, delegations, business visits, meetings and incentive travel. End-to-end coordination from resource allocation to on-ground execution.",
                     icon: UsersRound,
+                    accentColor: "from-purple-500/20 to-transparent",
                     points: ["Corporate and delegation travel", "Meetings and business events", "Incentive travel support", "Coordinated hotel, visa and ground arrangements"]
                 },
                 {
                     id: "ground",
                     title: "Ground Mobility",
-                    desc: "Ground transportation support across transfer, chauffeur and mobility coordination scenarios.",
+                    desc: "Ground transportation support across transfer, chauffeur and mobility coordination scenarios, helping partners elevate service standards and connection efficiency.",
                     icon: Car,
+                    accentColor: "from-emerald-500/20 to-transparent",
                     points: ["Airport transfer and point-to-point mobility", "Multi-supplier coordination", "Price comparison support", "Travel standard configuration", "Suitable for business and group travel needs"]
                 },
                 {
                     id: "digital",
                     title: "Digital Connectivity",
-                    desc: "Supported by proprietary travel systems and integration capability, this module enables app, web, API and SSO-based cooperation for more efficient business connectivity.",
+                    desc: "Powered by proprietary travel systems and deep integration capability, this module enables app, web, API and SSO-based cooperation for seamless digital collaboration.",
                     icon: CodeSquare,
+                    accentColor: "from-cyan-500/20 to-transparent",
                     points: ["App / H5 / PC support", "API integration", "Single sign-on capability", "Travel and organization management", "Reporting and settlement support", "Chinese / English switching"]
                 }
             ]
@@ -58,6 +69,7 @@ export default function CoreSolutions() {
                     title: "统一航空 API：无缝整合 GDS、NDC 与 LCC 运力",
                     desc: "交付结构化、可落地的运价与规则数据。通过标准化接口打破底层技术壁垒，支持极速部署、自动化订单流转与多源比价优化。",
                     icon: Plane,
+                    accentColor: "from-blue-500/20 to-transparent",
                     points: ["多渠道机票资源整合", "航司官网直连与 NDC 能力", "协议价格及客户协议托管", "国际分销系统接入支持", "适配团队与复杂行程需求", "依托集团资源网络提升供给灵活度"]
                 },
                 {
@@ -65,6 +77,7 @@ export default function CoreSolutions() {
                     title: "战略级 B2B 酒店与全球出行供给",
                     desc: "依托集团资源协同效应，提供一体化住宿解决方案。接入全球逾 300 万家酒店，通过实时动态分销确保资源的一致性与履约的稳定性。",
                     icon: Bed,
+                    accentColor: "from-amber-500/20 to-transparent",
                     points: ["全球资源协同优势", "市场领先的库存可用性", "一体化供应商管理", "服务标准的高度一致性", "适配企业级与项目型住宿需求"]
                 },
                 {
@@ -72,6 +85,7 @@ export default function CoreSolutions() {
                     title: "团队与会奖",
                     desc: "支持企业团队、代表团、商务考察、会议与奖励旅游等场景，提供从资源配置到执行协同的一体化支持。",
                     icon: UsersRound,
+                    accentColor: "from-purple-500/20 to-transparent",
                     points: ["企业团队与代表团出行", "商务考察与会议服务", "奖励旅游与活动场景支持", "可协同酒店、签证、租车等相关资源"]
                 },
                 {
@@ -79,6 +93,7 @@ export default function CoreSolutions() {
                     title: "地面交通",
                     desc: "覆盖接送机、专车、租车及多供应商协同场景，帮助合作伙伴提升出行衔接效率与服务体验。",
                     icon: Car,
+                    accentColor: "from-emerald-500/20 to-transparent",
                     points: ["接送机与点对点交通", "多供应商能力整合", "支持同屏比价", "支持不同差标配置", "适配商务与团队用车需求"]
                 },
                 {
@@ -86,6 +101,7 @@ export default function CoreSolutions() {
                     title: "系统与连接能力",
                     desc: "依托自研差旅系统与连接能力，支持 APP、H5、PC、API、单点登录及差旅管理功能，为合作伙伴提供更高效的数字化协同能力。",
                     icon: CodeSquare,
+                    accentColor: "from-cyan-500/20 to-transparent",
                     points: ["APP / H5 / PC 多端支持", "API 对接支持", "单点登录能力", "差旅管理与组织管理", "报表分析与结算管理", "中英文切换支持"]
                 }
             ]
@@ -98,14 +114,17 @@ export default function CoreSolutions() {
         <section id="core-solutions" className="section-padding bg-white relative overflow-hidden">
             {/* Subtle tech dashboard background */}
             <div
-                className="absolute inset-0 pointer-events-none opacity-[0.04]"
+                className="absolute inset-0 pointer-events-none opacity-[0.035]"
                 style={{
                     backgroundImage: `url('/ontheway-b2b-pro/images/solutions_tech_dashboard.png')`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                 }}
             />
+            {/* Animated grid lines */}
+            <div className="absolute inset-0 bg-[linear-gradient(rgba(11,40,83,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(11,40,83,0.04)_1px,transparent_1px)] bg-[size:80px_80px] pointer-events-none" />
             <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#0b2853] via-[#C8A050] to-[#E8311F]" />
+            
             <div className="container mx-auto px-4 lg:px-8">
                 <div className="flex flex-col items-start max-w-5xl mx-auto mb-24 space-y-6">
                     <div className="inline-flex items-center gap-3">
@@ -115,30 +134,38 @@ export default function CoreSolutions() {
                     <h2 className="text-5xl md:text-7xl font-extrabold text-slate-900 leading-[1.1] tracking-tight">
                         {t.title}
                     </h2>
+                    <p className="text-lg text-slate-500 max-w-2xl font-medium">
+                        {lang === 'ZH' ? '五大核心能力模块，构建完整的全球 B2B 旅行基础设施。' : 'Five integrated capability modules powering a complete global B2B travel infrastructure.'}
+                    </p>
                 </div>
 
-                <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10">
+                <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
                     {t.solutions.map((sol, index) => {
                         const Icon = sol.icon;
                         return (
-                            <div 
-                                key={sol.id} 
-                                className={`group p-10 md:p-12 rounded-[2.5rem] border border-slate-100 bg-slate-50/50 hover:bg-white hover:shadow-[0_40px_80px_-15px_rgba(11,40,83,0.1)] transition-all duration-500 relative overflow-hidden ${index === 4 ? 'lg:col-span-2' : ''}`}
+                            <div
+                                key={sol.id}
+                                className={`group p-10 md:p-12 rounded-[2.5rem] border border-slate-100 bg-slate-50/50 hover:bg-white hover:shadow-[0_40px_80px_-15px_rgba(11,40,83,0.12)] transition-all duration-500 relative overflow-hidden cursor-default ${index === 4 ? 'lg:col-span-2' : ''}`}
                             >
-                                {index === 1 && (
-                                    <div className="absolute inset-0 z-0 opacity-0 group-hover:opacity-40 transition-opacity duration-700 pointer-events-none">
-                                        <Image 
-                                            src={hotelVisual} 
-                                            alt="Smart Hotel Visual" 
-                                            fill 
-                                            className="object-cover scale-110 group-hover:scale-100 transition-transform duration-1000"
-                                            unoptimized
-                                        />
-                                        <div className="absolute inset-0 bg-white/60 group-hover:bg-white/40 transition-colors" />
-                                    </div>
-                                )}
+                                {/* Background image for each card — appears on hover */}
+                                <div className="absolute inset-0 z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none">
+                                    <Image
+                                        src={cardVisuals[index]}
+                                        alt={sol.title}
+                                        fill
+                                        className="object-cover scale-110 group-hover:scale-100 transition-transform duration-1000"
+                                        unoptimized
+                                    />
+                                    {/* Dual layer overlay — white base + accent gradient */}
+                                    <div className="absolute inset-0 bg-white/75" />
+                                    <div className={`absolute inset-0 bg-gradient-to-br ${sol.accentColor}`} />
+                                </div>
+
+                                {/* Subtle accent glow on hover */}
+                                <div className="absolute -bottom-12 -right-12 w-40 h-40 bg-slate-200/0 group-hover:bg-blue-100/40 rounded-full blur-3xl transition-all duration-700 -z-10" />
+
                                 <div className="flex items-start gap-8 mb-12 relative z-10">
-                                    <div className="shrink-0 w-20 h-20 bg-[#0b2853]/5 rounded-[1.5rem] flex items-center justify-center group-hover:bg-[#0b2853] transition-all duration-500 group-hover:scale-110 group-hover:rotate-6">
+                                    <div className="shrink-0 w-20 h-20 bg-[#0b2853]/5 rounded-[1.5rem] flex items-center justify-center group-hover:bg-[#0b2853] transition-all duration-500 group-hover:scale-110 group-hover:rotate-6 shadow-sm">
                                         <Icon className="w-10 h-10 text-[#0b2853] group-hover:text-white transition-colors" />
                                     </div>
                                     <div>
@@ -146,10 +173,10 @@ export default function CoreSolutions() {
                                         <p className="text-slate-600 leading-relaxed max-w-xl text-lg font-medium opacity-80">{sol.desc}</p>
                                     </div>
                                 </div>
-                                <div className={`grid grid-cols-1 ${index === 4 ? 'md:grid-cols-3' : 'md:grid-cols-2'} gap-4 pt-6 border-t border-slate-200/60`}>
+                                <div className={`grid grid-cols-1 ${index === 4 ? 'md:grid-cols-3' : 'md:grid-cols-2'} gap-4 pt-6 border-t border-slate-200/60 relative z-10`}>
                                     {sol.points.map((point, i) => (
-                                        <div key={i} className="flex gap-3">
-                                            <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 opacity-80" />
+                                        <div key={i} className="flex gap-3 items-start">
+                                            <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 opacity-80 mt-0.5" />
                                             <span className="text-slate-700 text-sm font-medium">{point}</span>
                                         </div>
                                     ))}
