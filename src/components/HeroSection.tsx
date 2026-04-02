@@ -15,8 +15,8 @@ export default function HeroSection() {
             eyebrow: "A Global B2B Travel Resource Platform",
             title1: "Global Travel",
             title2: "Resource Allocation Platform",
-            sub: "Connecting air, hotel, group travel, mobility and digital capabilities for TMCs, OTAs, wholesalers and enterprise travel partners.",
-            desc: "Backed by Hong Kong, China and U.S. entities, global sourcing coordination and multi-market fulfillment support.",
+            sub: "Connecting air, hotel, group travel, mobility and digital capabilities for TMCs, OTAs, wholesalers and enterprise partners.",
+            desc: "Backed by the strategic foundation of Tengxuan Travel Group, providing global sourcing coordination and multi-market fulfillment across Hong Kong, China and the U.S.",
             btn1: "Contact Our B2B Team",
             btn2: "Explore Capabilities",
             trust: {
@@ -29,8 +29,8 @@ export default function HeroSection() {
             eyebrow: "全方位 B2B 旅行资源平台",
             title1: "全球旅行",
             title2: "资源配置平台",
-            sub: "连接机票、酒店、团队出行、地面交通与数字化能力，服务于 TMC、OTA、批发商及企业差旅伙伴。",
-            desc: "依托中国香港与美国实体，提供全球采集协同与多地履约支撑。",
+            sub: "连接机票、酒店、团队出行、地面交通与数字化能力，服务于全球 TMC、OTA、批发商及企业合作伙伴。",
+            desc: "依托腾轩旅游集团战略基石，连接中国香港与美国实体，提供全球采集协同与多地履约支撑。",
             btn1: "联系 B2B 团队",
             btn2: "查看能力详情",
             trust: {

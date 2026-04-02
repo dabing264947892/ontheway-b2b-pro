@@ -103,7 +103,7 @@ export default function GlobalFares() {
                             </div>
                             <div className="hidden sm:block w-px h-20 bg-white/10" />
                             <div className="text-slate-400 text-sm leading-relaxed italic max-w-xs font-medium text-center sm:text-left">
-                                {lang === 'ZH' ? '全球仅有少数平台具备真正意义上的多点出票与境外结算能力。' : 'Only a handful of platforms worldwide offer genuine multi-POS ticketing and cross-border settlement at scale.'}
+                                {lang === 'ZH' ? '具备多点出票与境外结算能力的全球化平台可为合作伙伴显著提升清算效率。' : 'Leveraging extensive local ticketing configurations provides scale in multi-market fulfillment and settlement.'}
                             </div>
                         </div>
                     </div>

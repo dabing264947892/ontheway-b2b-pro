@@ -10,7 +10,7 @@ export default function Credentials() {
     const text = {
         EN: {
             title: "Licensed Entities & Capability Credentials",
-            intro: "Dual-Hub Global Compliance & Transaction Security. Anchored in Los Angeles and Hong Kong, China. Backed by highly regulated ARC (US) and IATA/TIA (Hong Kong, China) accreditations, establishing an unshakeable foundation for global fund routing, local market expertise, and B2B operational integrity.",
+            intro: "Dual-Hub Global Compliance & Transaction Security. Anchored in Los Angeles and Hong Kong, China, backed by ARC (US) and IATA/TIA (Hong Kong, China) accreditations. We provide a reliable operational stability and compliance framework for global fund routing, local market expertise, and B2B operational integrity.",
             cards: [
                 {
                     name: "On The Way (Hong Kong) Travel Limited",
@@ -37,7 +37,7 @@ export default function Credentials() {
         },
         ZH: {
             title: "资质实体与行业背书",
-            intro: "美港双引擎：全球合规与资金流转安全底座。扎根洛杉矶与中国香港。依托高标准的美国 ARC 与中国香港 IATA/TIA 核心旅游资质，构筑坚不可摧的全球资金流转通道、深度本地化运营团队及 B2B 交易信用基石。",
+            intro: "美港双引擎：全球合规与交易安全。深耕洛杉矶与中国香港，并获得 ARC (美国) 与 IATA/TIA (中国香港) 核心大交通资质认证。我们为全球合作伙伴提供稳健的合规架构、本市场专业洞察及 B2B 交易信用基石。",
             cards: [
                 {
                     name: "On The Way (Hong Kong) Travel Limited",

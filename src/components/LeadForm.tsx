@@ -21,8 +21,8 @@ export default function LeadForm() {
 
     const text = {
         EN: {
-            title: "Ready to scale your travel business?",
-            desc: "Connect with our B2B partnership team to access global inventory and digital capabilities.",
+            title: "Discuss Your Business Needs",
+            desc: "Connect with our B2B partnership team to explore tailored resource solutions and cooperation models.",
             form: {
                 companyType: "Company Type",
                 companyOptions: ["TMC", "OTA", "Wholesaler", "Corporate"],
@@ -31,15 +31,15 @@ export default function LeadForm() {
                 volume: "Estimated Monthly Volume",
                 volumeOptions: ["< $100k", "$100k - $500k", "$500k - $1M", "$1M+"],
                 email: "Business Email",
-                submit: "Request Access",
+                submit: "Start a Cooperation Discussion",
                 submitting: "Submitting...",
                 success: "Request Submitted Successfully",
-                successDesc: "Our partnership team will contact you within 24 hours."
+                successDesc: "Our partnership team will contact you within 24 hours to discuss the next steps."
             }
         },
         ZH: {
-            title: "准备好扩展您的差旅业务了吗？",
-            desc: "与我们的 B2B 合作团队取得联系，获取全球资源供给与数字化系统能力。",
+            title: "探讨您的业务需求",
+            desc: "与我们的 B2B 合作团队取得联系，探索定制化的资源方案与合作模式。",
             form: {
                 companyType: "公司类型 (Company Type)",
                 companyOptions: ["TMC", "OTA", "批发商 (Wholesaler)", "企业客户 (Corporate)"],
@@ -48,10 +48,10 @@ export default function LeadForm() {
                 volume: "预估月交易量 (Estimated Monthly Volume)",
                 volumeOptions: ["< 10万美金", "10万 - 50万美金", "50万 - 100万美金", "100万美金以上"],
                 email: "工作邮箱 (Business Email)",
-                submit: "提交需求",
+                submit: "发起合作洽谈",
                 submitting: "提交中...",
-                success: "需求提交成功",
-                successDesc: "我们的合作团队将在 24 小时内与您联系。"
+                success: "咨询提交成功",
+                successDesc: "我们的合作伙伴团队将在 24 小时内与您联系，探讨后续合作事宜。"
             }
         }
     };

@@ -10,21 +10,21 @@ export default function GlobalCapability() {
     const text = {
         EN: {
             title: "Global Distribution & Fulfillment Capability",
-            copy: "We empower partners with a deep-tier travel resource allocation platform, focusing on high-performance air distribution, multi-market fulfillment, and seamless digital coordination across global hubs.",
+            copy: "We provide a scalable B2B travel resource coordination platform, focusing on high-performance air distribution, multi-market fulfillment, and seamless digital coordination across global hubs.",
             points: [
                 { title: "Multi-Market Ticketing", desc: "Access broader fare options and routing via multi-market ticketing flexibility and localized POS support.", icon: Globe2 },
+                { title: "Fulfillment Coordination", desc: "Strong cross-border settlement and 24/7 bilingual operational support through our HK and U.S. entities.", icon: Briefcase },
                 { title: "Complex Itinerary Support", desc: "Expert handling of international, multi-city, and non-standard travel needs including group bookings.", icon: Link2 },
-                { title: "Fulfillment Coordination", desc: "Stronger cross-border settlement and 24/7 bilingual operational support through our HK and U.S. entities.", icon: Briefcase },
                 { title: "Direct Resource Access", desc: "Aggregated content from GDS, NDC, and LCCs integrated with group-level sourcing synergy.", icon: Network }
             ]
         },
         ZH: {
             title: "全球分销与履约服务能力",
-            copy: "我们通过深度的旅行资源配置平台赋能合作伙伴，聚焦高效的机票分销、多地履约协同以及跨全球枢纽的数字化业务流转。",
+            copy: "我们提供高度可扩展的 B2B 旅行资源协同平台，聚焦高效的机票分销、多地履约协同以及跨全球枢纽的数字化业务流转。",
             points: [
                 { title: "多地化出票能力", desc: "依托多点 POS 支撑与出票灵活性，提供更广泛的运价选择与航线组合。", icon: Globe2 },
-                { title: "复杂行程支持", copy: "专业处理国际多航段、非标出行及大型团队预订等复杂业务需求。", icon: Link2 },
-                { title: "履约协同保障", desc: "通过中国香港与美国实体，提供强大的跨境结算支持与 24/7 中英双语业务协同。", icon: Briefcase },
+                { title: "履约协同保障", desc: "通过中国香港与美国实体，提供稳健的跨境结算支持与 24/7 中英双语业务协同。", icon: Briefcase },
+                { title: "复杂行程支持", desc: "专业处理国际多航段、非标出行及大型团队预订等业务需求。", icon: Link2 },
                 { title: "资源直连优势", desc: "聚合 GDS、NDC 及 LCC 全球运力，并结合集团化采集的规模效应。", icon: Network }
             ]
         }

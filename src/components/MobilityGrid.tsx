@@ -9,9 +9,9 @@ export default function MobilityGrid() {
     const text = {
         EN: {
             title: "Global Air Content & Distribution",
-            desc: "Direct-connect capabilities providing the most competitive fares and robust fulfillment for global travel partners.",
-            bannerTitle: "Extensive Global Routing & Fulfillment",
-            bannerDesc: "Leverage our deep aviation integration to capture multi-market margins and ensure stable ticketing across 5 continents.",
+            desc: "Comprehensive direct connectivity providing broader fare access and robust fulfillment for global travel partners.",
+            bannerTitle: "Multi-Market Global Fulfillment",
+            bannerDesc: "Leveraging extensive aviation integration to capture multi-market margins and ensure operational stability across 5 continents.",
             box1Title: "NDC Direct Integration",
             box1Desc: "Direct connections to 30+ major airlines globally including AA, UA, LH, and QR for enhanced content access.",
             box1Suffix: "Airlines",
@@ -24,9 +24,9 @@ export default function MobilityGrid() {
         },
         ZH: {
             title: "全球机票内容与分销矩阵",
-            desc: "卓越的直连接入能力，为全球合作伙伴提供极具竞争力的票价与稳健的履约保障。",
-            bannerTitle: "广泛的全球航线与履约覆盖",
-            bannerDesc: "依托深度的航空技术整合，获取跨市场利润空间并确保全球五大洲的出票稳定性。",
+            desc: "综合性直连能力，为全球合作伙伴提供广泛的运价访问与稳健的履约保障。",
+            bannerTitle: "多地化全球履约体系",
+            bannerDesc: "依托深度的航空技术整合，获取跨市场利润空间并确保全球运营稳定性。",
             box1Title: "NDC 核心直连",
             box1Desc: "全球直连 30 余家主流航空公司，包含 AA、UA、LH 和 QR 等核心运力。",
             box1Suffix: "直连航司",

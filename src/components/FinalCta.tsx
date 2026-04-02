@@ -8,16 +8,16 @@ export default function FinalCta() {
 
     const text = {
         EN: {
-            title: "Let's Build Better Travel Cooperation Together",
-            desc: "If you are looking for more reliable global travel resources, more flexible cooperation models and stronger digital connectivity, we'd be glad to connect.",
-            btn1: "Contact Us",
-            btn2: "Request a Solution"
+            title: "Let's Explore a Partnership Together",
+            desc: "If you are looking for reliable global travel resources, scaleable fulfillment models and strong digital connectivity, we'd be glad to discuss a cooperation that fits your business needs.",
+            btn1: "Start a Cooperation Discussion",
+            btn2: "Talk to Our Partnership Team"
         },
         ZH: {
-            title: "欢迎与在路上海外建立合作",
-            desc: "如果你正在寻找更稳定的全球旅行资源、更灵活的合作模式与更高效的系统连接能力，我们期待与你进一步沟通。",
-            btn1: "联系合作",
-            btn2: "获取方案"
+            title: "期待与您建立业务合作",
+            desc: "如果您正在寻找稳健的全球旅行资源、可扩展的履约模式及高效的数字化连接，我们期待与您探讨适配业务需求的合作方案。",
+            btn1: "发起合作咨询",
+            btn2: "联系合作伙伴团队"
         }
     };
 
