@@ -21,43 +21,43 @@ export default function CoreSolutions() {
             solutions: [
                 {
                     id: "air",
-                    title: "Unified Aviation API: Seamless GDS, NDC & LCC Integration",
-                    desc: "Delivering structured, actionable fare data. Bypass technical fragmentation with our standardized API, designed for rapid deployment, automated order management, and multi-source pricing optimization.",
+                    title: "Global Air Distribution",
+                    desc: "Multi-market ticketing, GDS/NDC/LCC content aggregation, and complex itinerary support for TMCs and OTAs.",
                     icon: Plane,
                     accentColor: "from-blue-500/20 to-transparent",
-                    points: ["Multi-source air content", "Direct airline connectivity and NDC capability", "Corporate fare and agreement support", "International distribution access", "Suitable for group and complex itineraries", "Backed by broader group-level resource coordination"]
+                    points: ["Multi-market ticketing flexibility", "Direct GDS, NDC & LCC aggregation", "Complex international routing support", "Automated fulfillment & order management", "Corporate & group fare coordination", "24/7 cross-border operational support"]
                 },
                 {
                     id: "hotel",
-                    title: "Strategic B2B Accommodation & Global Mobility",
-                    desc: "Harnessing Group-level synergy to provide integrated accommodation solutions. Access 3,000,000+ global properties with real-time dynamic distribution, ensuring resource consistency and reliable fulfillment.",
+                    title: "Hotel & Accommodation Supply",
+                    desc: "Direct access to 3,000,000+ global properties with competitive B2B rates and reliable fulfillment coordination.",
                     icon: Bed,
                     accentColor: "from-amber-500/20 to-transparent",
-                    points: ["Global resource synergy", "Market-leading inventory availability", "Integrated supplier management", "Consistency in service standards", "Optimized for corporate and project-based stays"]
+                    points: ["Extensive global inventory access", "Competitive B2B net rates", "Strategic sourcing & fulfillment", "Consistency in localized service", "Optimized for corporate & project-based stays"]
                 },
                 {
                     id: "group",
-                    title: "Group Travel & MICE",
-                    desc: "Flexible support for corporate groups, delegations, business visits, meetings and incentive travel. End-to-end coordination from resource allocation to on-ground execution.",
+                    title: "Group Travel & MICE Support",
+                    desc: "End-to-end coordination for meetings, incentive travel, conferences, and complex corporate delegations.",
                     icon: UsersRound,
                     accentColor: "from-purple-500/20 to-transparent",
-                    points: ["Corporate and delegation travel", "Meetings and business events", "Incentive travel support", "Coordinated hotel, visa and ground arrangements"]
+                    points: ["Corporate group & delegation travel", "MICE & business event services", "Incentive travel execution", "Integrated hotel & ground arrangements"]
                 },
                 {
                     id: "ground",
-                    title: "Ground Mobility",
-                    desc: "Ground transportation support across transfer, chauffeur and mobility coordination scenarios, helping partners elevate service standards and connection efficiency.",
+                    title: "Ground Mobility & Airport Transfers",
+                    desc: "Coordinated transportation solutions across major global business hubs, ensuring seamless travel connections.",
                     icon: Car,
                     accentColor: "from-emerald-500/20 to-transparent",
-                    points: ["Airport transfer and point-to-point mobility", "Multi-supplier coordination", "Price comparison support", "Travel standard configuration", "Suitable for business and group travel needs"]
+                    points: ["24/7 airport transfer services", "Chauffeur & point-to-point mobility", "Multi-supplier coordination", "Standardized service quality", "Global hub coverage"]
                 },
                 {
                     id: "digital",
-                    title: "Digital Connectivity",
-                    desc: "Powered by proprietary travel systems and deep integration capability, this module enables app, web, API and SSO-based cooperation for seamless digital collaboration.",
+                    title: "Digital Connectivity & Travel Systems",
+                    desc: "Enterprise-grade API, system integration models, and digital transformation tools for modern travel operations.",
                     icon: CodeSquare,
                     accentColor: "from-cyan-500/20 to-transparent",
-                    points: ["App / H5 / PC support", "API integration", "Single sign-on capability", "Travel and organization management", "Reporting and settlement support", "Chinese / English switching"]
+                    points: ["Scalable API & SDK support", "PC / Web / App / H5 connectivity", "Seamless SSO & system integration", "Travel & organization management", "Reporting & settlement automation", "Bilingual interface (CN/EN)"]
                 }
             ]
         },
@@ -66,43 +66,43 @@ export default function CoreSolutions() {
             solutions: [
                 {
                     id: "air",
-                    title: "统一航空 API：无缝整合 GDS、NDC 与 LCC 运力",
-                    desc: "交付结构化、可落地的运价与规则数据。通过标准化接口打破底层技术壁垒，支持极速部署、自动化订单流转与多源比价优化。",
+                    title: "全球机票分销",
+                    desc: "支持多市场出票、GDS/NDC/LCC 运力聚合及复杂航线解决方案，赋能 TMC 与 OTA。",
                     icon: Plane,
                     accentColor: "from-blue-500/20 to-transparent",
-                    points: ["多渠道机票资源整合", "航司官网直连与 NDC 能力", "协议价格及客户协议托管", "国际分销系统接入支持", "适配团队与复杂行程需求", "依托集团资源网络提升供给灵活度"]
+                    points: ["多地化本地出票灵活性", "直连 GDS、NDC 与 LCC 内容枢纽", "支持复杂国际航线定制", "自动化履约与订单流转", "企业与团队协议价托管", "24/7 跨境业务协同支撑"]
                 },
                 {
                     id: "hotel",
-                    title: "战略级 B2B 酒店与全球出行供给",
-                    desc: "依托集团资源协同效应，提供一体化住宿解决方案。接入全球逾 300 万家酒店，通过实时动态分销确保资源的一致性与履约的稳定性。",
+                    title: "酒店与住宿供应",
+                    desc: "直连全球逾 300 万个住宿点，提供极具竞争力的 B2B 净价支持及可靠的履约保障。",
                     icon: Bed,
                     accentColor: "from-amber-500/20 to-transparent",
-                    points: ["全球资源协同优势", "市场领先的库存可用性", "一体化供应商管理", "服务标准的高度一致性", "适配企业级与项目型住宿需求"]
+                    points: ["极具规模的全球库存覆盖", "优势显著的 B2B 净价体系", "策略性采集与履约协同", "高度一致的本地化服务标准", "适配企业级与项目型住宿需求"]
                 },
                 {
                     id: "group",
-                    title: "团队与会奖",
-                    desc: "支持企业团队、代表团、商务考察、会议与奖励旅游等场景，提供从资源配置到执行协同的一体化支持。",
+                    title: "团队出行与 MICE 支持",
+                    desc: "为各种会议、奖励旅游、行业展览及大型代表团提供端到端的专业业务协同与本地化执行。",
                     icon: UsersRound,
                     accentColor: "from-purple-500/20 to-transparent",
-                    points: ["企业团队与代表团出行", "商务考察与会议服务", "奖励旅游与活动场景支持", "可协同酒店、签证、租车等相关资源"]
+                    points: ["企业团队与代表团出行", "会奖旅游与商务活动服务", "奖励旅游项目端到端执行", "酒店、签证与地面交通集成"]
                 },
                 {
                     id: "ground",
-                    title: "地面交通",
-                    desc: "覆盖接送机、专车、租车及多供应商协同场景，帮助合作伙伴提升出行衔接效率与服务体验。",
+                    title: "地面交通与接送机",
+                    desc: "覆盖全球核心商务城市的出行解决方案，确保在各大枢纽节点的无缝衔接与交付体验。",
                     icon: Car,
                     accentColor: "from-emerald-500/20 to-transparent",
-                    points: ["接送机与点对点交通", "多供应商能力整合", "支持同屏比价", "支持不同差标配置", "适配商务与团队用车需求"]
+                    points: ["全天候机场接送服务", "专车与点对点出行保障", "多供应商统一调度管理", "服务质量标准化交付", "覆盖全球主要交通枢纽"]
                 },
                 {
                     id: "digital",
-                    title: "系统与连接能力",
-                    desc: "依托自研差旅系统与连接能力，支持 APP、H5、PC、API、单点登录及差旅管理功能，为合作伙伴提供更高效的数字化协同能力。",
+                    title: "数字化连接与差旅系统",
+                    desc: "提供企业级 API、系统接入方案及数字化管理工具，协助合作伙伴实现数字化运营转型。",
                     icon: CodeSquare,
                     accentColor: "from-cyan-500/20 to-transparent",
-                    points: ["APP / H5 / PC 多端支持", "API 对接支持", "单点登录能力", "差旅管理与组织管理", "报表分析与结算管理", "中英文切换支持"]
+                    points: ["高可扩展 API 与 SDK 支持", "PC / Web / App / H5 全端覆盖", "无缝 SSO 与系统集成能力", "差旅资源与组织架构管理", "自动化报表与结算协同", "中英双语界面支持"]
                 }
             ]
         }

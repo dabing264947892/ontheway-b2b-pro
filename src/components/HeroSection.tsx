@@ -12,31 +12,31 @@ export default function HeroSection() {
 
     const text = {
         EN: {
-            eyebrow: "B2B Travel Infrastructure",
-            title1: "Powering Global Travel:",
-            title2: "Next-Generation Distribution & Multi-Source Aggregation.",
-            sub: "Direct access to GDS, NDC, and LCCs via high-performance APIs.",
-            desc: "Streamlining fulfillment and maximizing margins for global TMCs and OTAs.",
-            btn1: "Request API Access",
-            btn2: "Explore Solutions",
+            eyebrow: "A Global B2B Travel Resource Platform",
+            title1: "Global Travel",
+            title2: "Resource Allocation Platform",
+            sub: "Connecting air, hotel, group travel, mobility and digital capabilities for TMCs, OTAs, wholesalers and enterprise travel partners.",
+            desc: "Backed by Hong Kong, China and U.S. entities, global sourcing coordination and multi-market fulfillment support.",
+            btn1: "Contact Our B2B Team",
+            btn2: "Explore Capabilities",
             trust: {
-                uptime: "99.9% API Uptime",
-                response: "< 200ms Response",
-                aggregation: "Multi-Source Aggregation"
+                uptime: "Global Fulfillment",
+                response: "24/7 Support",
+                aggregation: "Multi-Market POS"
             }
         },
         ZH: {
-            eyebrow: "全球 B2B 旅行基础设施",
-            title1: "驱动全球差旅：",
-            title2: "新一代多源内容聚合与分销基础设施",
-            sub: "通过高性能 API 无缝直连 GDS、NDC 与 LCC 复杂内容库。",
-            desc: "为全球 TMC 与 OTA 提升履约效率，重塑供应链利润空间。",
-            btn1: "申请 API 接入",
-            btn2: "查看解决方案",
+            eyebrow: "全方位 B2B 旅行资源平台",
+            title1: "全球旅行",
+            title2: "资源配置平台",
+            sub: "连接机票、酒店、团队出行、地面交通与数字化能力，服务于 TMC、OTA、批发商及企业差旅伙伴。",
+            desc: "依托中国香港与美国实体，提供全球采集协同与多地履约支撑。",
+            btn1: "联系 B2B 团队",
+            btn2: "查看能力详情",
             trust: {
-                uptime: "99.9% 接口稳定性",
-                response: "毫秒级响应",
-                aggregation: "多源内容聚合"
+                uptime: "全球履约协同",
+                response: "24/7 双语支持",
+                aggregation: "多地结算能力"
             }
         }
     };

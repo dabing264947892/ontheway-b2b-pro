@@ -9,23 +9,23 @@ export default function GlobalCapability() {
 
     const text = {
         EN: {
-            title: "Global Resource & Capability Overview",
-            copy: "Built on the group's travel resource allocation capability and OTW's years of service experience, we continue to strengthen supply integration, digital connectivity and fulfillment coordination for complex international travel cooperation.",
+            title: "Global Distribution & Fulfillment Capability",
+            copy: "We empower partners with a deep-tier travel resource allocation platform, focusing on high-performance air distribution, multi-market fulfillment, and seamless digital coordination across global hubs.",
             points: [
-                { title: "Integrated Travel Supply", desc: "Air, hotel, rail, mobility, MICE and related services", icon: Link2 },
-                { title: "Digital Connectivity", desc: "Multi-end access, API, SSO and management support", icon: Network },
-                { title: "Enterprise Service Experience", desc: "Supporting a large and diverse enterprise customer base", icon: Briefcase },
-                { title: "Cross-Market Support", desc: "Enabled by Hong Kong, U.S. and broader regional capability", icon: Globe2 }
+                { title: "Multi-Market Ticketing", desc: "Access broader fare options and routing via multi-market ticketing flexibility and localized POS support.", icon: Globe2 },
+                { title: "Complex Itinerary Support", desc: "Expert handling of international, multi-city, and non-standard travel needs including group bookings.", icon: Link2 },
+                { title: "Fulfillment Coordination", desc: "Stronger cross-border settlement and 24/7 bilingual operational support through our HK and U.S. entities.", icon: Briefcase },
+                { title: "Direct Resource Access", desc: "Aggregated content from GDS, NDC, and LCCs integrated with group-level sourcing synergy.", icon: Network }
             ]
         },
         ZH: {
-            title: "全球资源与能力概览",
-            copy: "依托集团全球旅行资源配置能力与在路上商旅多年服务经验，我们持续强化资源整合、数字连接与履约协同能力，服务于更复杂的国际合作场景。",
+            title: "全球分销与履约服务能力",
+            copy: "我们通过深度的旅行资源配置平台赋能合作伙伴，聚焦高效的机票分销、多地履约协同以及跨全球枢纽的数字化业务流转。",
             points: [
-                { title: "全球资源整合能力", desc: "覆盖机票、酒店、火车票、用车、会奖与相关延伸服务", icon: Link2 },
-                { title: "数字化连接能力", desc: "支持多端、API、SSO 与系统管理", icon: Network },
-                { title: "企业服务经验", desc: "已服务上千家企业客户", icon: Briefcase },
-                { title: "国际合作支撑", desc: "依托香港、美国等跨区域业务能力", icon: Globe2 }
+                { title: "多地化出票能力", desc: "依托多点 POS 支撑与出票灵活性，提供更广泛的运价选择与航线组合。", icon: Globe2 },
+                { title: "复杂行程支持", copy: "专业处理国际多航段、非标出行及大型团队预订等复杂业务需求。", icon: Link2 },
+                { title: "履约协同保障", desc: "通过中国香港与美国实体，提供强大的跨境结算支持与 24/7 中英双语业务协同。", icon: Briefcase },
+                { title: "资源直连优势", desc: "聚合 GDS、NDC 及 LCC 全球运力，并结合集团化采集的规模效应。", icon: Network }
             ]
         }
     };

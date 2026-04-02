@@ -11,6 +11,7 @@ import LeadForm from "@/components/LeadForm";
 import Footer from "@/components/Footer";
 import MobilityGrid from "@/components/MobilityGrid";
 import GlobalGdsMap from "@/components/GlobalGdsMap";
+import CooperationModels from "@/components/CooperationModels";
 import FinalCta from "@/components/FinalCta";
 
 export default function Home() {
@@ -28,6 +29,7 @@ export default function Home() {
                 <WhyChooseUs />
                 <GlobalCapability />
                 <Credentials />
+                <CooperationModels />
                 <FinalCta />
                 <LeadForm />
             </div>

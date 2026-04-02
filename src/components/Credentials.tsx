@@ -10,11 +10,11 @@ export default function Credentials() {
     const text = {
         EN: {
             title: "Licensed Entities & Capability Credentials",
-            intro: "Dual-Hub Global Compliance & Transaction Security. Anchored in Los Angeles and Hong Kong. Backed by highly regulated ARC (US) and IATA/TIA (HK) accreditations, establishing an unshakeable foundation for global fund routing, local market expertise, and B2B operational integrity.",
+            intro: "Dual-Hub Global Compliance & Transaction Security. Anchored in Los Angeles and Hong Kong, China. Backed by highly regulated ARC (US) and IATA/TIA (Hong Kong, China) accreditations, establishing an unshakeable foundation for global fund routing, local market expertise, and B2B operational integrity.",
             cards: [
                 {
                     name: "On The Way (Hong Kong) Travel Limited",
-                    desc: "Hong Kong entity supporting APAC and international travel cooperation. IATA Accredited Agent (Code: 13335431), TIA Licensed Travel Agent (Licence No: 354309) & HATA Member since 2018.",
+                    desc: "Hong Kong, China entity supporting APAC and international travel cooperation. IATA Accredited Agent (Code: 13335431), TIA Licensed Travel Agent (Licence No: 354309) & HATA Member since 2018.",
                     icon: MapPin,
                     badge: "IATA · TIA · HATA"
                 },
@@ -32,16 +32,16 @@ export default function Credentials() {
                 }
             ],
             bannerTitle: "Built on Trust. Operating at Global Scale.",
-            bannerDesc: "Dual-licensed in Hong Kong and the United States, enabling compliant cross-border travel fulfillment for partners worldwide.",
+            bannerDesc: "Dual-licensed in Hong Kong, China and the United States, enabling compliant cross-border travel fulfillment for partners worldwide.",
             bannerCta: "View Our Credentials"
         },
         ZH: {
             title: "资质实体与行业背书",
-            intro: "美港双引擎：全球合规与资金流转安全底座。扎根洛杉矶与香港。依托高标准的美国 ARC 与香港 IATA/TIA 核心旅游资质，构筑坚不可摧的全球资金流转通道、深度本地化运营团队及 B2B 交易信用基石。",
+            intro: "美港双引擎：全球合规与资金流转安全底座。扎根洛杉矶与中国香港。依托高标准的美国 ARC 与中国香港 IATA/TIA 核心旅游资质，构筑坚不可摧的全球资金流转通道、深度本地化运营团队及 B2B 交易信用基石。",
             cards: [
                 {
                     name: "On The Way (Hong Kong) Travel Limited",
-                    desc: "香港业务主体，支持亚太及国际合作场景下的资源与履约协同。IATA 国际航协认证 (代码: 13335431)、TIA 持牌旅行社 (牌照号: 354309) 及 HATA 香港旅行社协会会员 (自2018年)。",
+                    desc: "中国香港业务主体，支持亚太及国际合作场景下的资源与履约协同。IATA 国际航协认证 (代码: 13335431)、TIA 持牌旅行社 (牌照号: 354309) 及 HATA 香港旅行社协会会员 (自2018年)。",
                     icon: MapPin,
                     badge: "IATA · TIA · HATA"
                 },
@@ -59,7 +59,7 @@ export default function Credentials() {
                 }
             ],
             bannerTitle: "信赖筑底，全球运营。",
-            bannerDesc: "香港与美国双重持牌实体，为全球合作伙伴提供合规、安全、可追溯的跨境出行履约服务。",
+            bannerDesc: "中国香港与美国双重持牌实体，为全球合作伙伴提供合规、安全、可追溯的跨境出行履约服务。",
             bannerCta: "了解更多资质"
         }
     };
@@ -96,24 +96,54 @@ export default function Credentials() {
                     </p>
                 </div>
 
-                <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-                    {t.cards.map((card, idx) => {
-                        const Icon = card.icon;
-                        return (
-                            <div key={idx} className="bg-white/5 backdrop-blur-2xl border border-white/10 rounded-[2rem] md:rounded-[2.5rem] p-8 md:p-12 hover:bg-white/10 hover:border-emerald-400/30 group transition-all duration-500 shadow-2xl relative overflow-hidden flex flex-col">
-                                <div className="absolute top-0 right-0 w-40 h-40 bg-emerald-400/5 blur-3xl pointer-events-none group-hover:bg-emerald-400/10 transition-all duration-700" />
-                                <div className="w-16 h-16 md:w-20 md:h-20 bg-white/5 border border-white/10 rounded-2xl md:rounded-3xl flex items-center justify-center mb-8 md:mb-10 shadow-xl group-hover:bg-emerald-400 group-hover:border-emerald-400 transition-all duration-500 group-hover:scale-110 group-hover:rotate-6">
-                                    <Icon className="w-8 h-8 md:w-10 md:h-10 text-white group-hover:text-[#06152B] transition-colors" />
+                <div className="max-w-7xl mx-auto space-y-12 mb-16">
+                    {/* Main Entities Row */}
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        {t.cards.slice(0, 2).map((card, idx) => {
+                            const Icon = card.icon;
+                            return (
+                                <div key={idx} className="bg-white/5 backdrop-blur-2xl border border-white/15 rounded-[2.5rem] p-10 md:p-14 hover:bg-white/10 hover:border-emerald-400/40 group transition-all duration-500 shadow-2xl relative overflow-hidden flex flex-col min-h-[420px]">
+                                    <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-400/5 blur-[100px] pointer-events-none group-hover:bg-emerald-400/10 transition-all duration-700" />
+                                    <div className="flex flex-col md:flex-row md:items-center gap-6 mb-10">
+                                        <div className="w-20 h-20 bg-white/5 border border-white/10 rounded-3xl flex items-center justify-center shadow-xl group-hover:bg-emerald-400 group-hover:border-emerald-400 transition-all duration-500 group-hover:scale-110 group-hover:rotate-6">
+                                            <Icon className="w-10 h-10 text-white group-hover:text-[#06152B] transition-colors" />
+                                        </div>
+                                        <div>
+                                            <h3 className="text-2xl md:text-3xl font-extrabold text-white mb-2 group-hover:text-emerald-400 transition-colors leading-tight tracking-tight">{card.name}</h3>
+                                            <div className="inline-flex items-center gap-2 px-3 py-1 bg-emerald-500/10 border border-emerald-500/20 rounded-full">
+                                                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                                                <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-widest">{card.badge}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p className="text-slate-300 leading-relaxed font-medium group-hover:text-slate-100 transition-colors text-base md:text-lg flex-1">
+                                        {card.desc}
+                                    </p>
+                                    <div className="mt-10 pt-10 border-t border-white/10 flex items-center justify-between">
+                                        <span className="text-xs font-bold text-slate-500 uppercase tracking-widest">{lang === 'ZH' ? '实体资质认证' : 'Official Entity Credential'}</span>
+                                        <ShieldCheck className="w-6 h-6 text-emerald-500/50" />
+                                    </div>
                                 </div>
-                                <h3 className="text-2xl font-extrabold text-white mb-5 group-hover:text-emerald-400 transition-colors leading-tight tracking-tight">{card.name}</h3>
-                                <p className="text-slate-400 leading-relaxed font-medium group-hover:text-slate-200 transition-colors text-sm flex-1">{card.desc}</p>
-                                {/* Badge */}
-                                <div className="mt-8 pt-6 border-t border-white/10">
-                                    <span className="text-xs font-bold tracking-widest text-emerald-400/80 uppercase">{card.badge}</span>
-                                </div>
+                            );
+                        })}
+                    </div>
+
+                    {/* Operational Credentials Row */}
+                    <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-[2.5rem] p-8 md:p-12 hover:bg-white/10 transition-all duration-500">
+                        <div className="flex flex-col md:flex-row items-center gap-10">
+                            <div className="w-20 h-20 bg-emerald-500/10 rounded-3xl flex items-center justify-center shrink-0">
+                                <ShieldCheck className="w-10 h-10 text-emerald-400" />
                             </div>
-                        );
-                    })}
+                            <div className="flex-1 text-center md:text-left">
+                                <h3 className="text-2xl font-bold text-white mb-3">{t.cards[2].name}</h3>
+                                <p className="text-slate-400 font-medium leading-relaxed">{t.cards[2].desc}</p>
+                            </div>
+                            <div className="flex gap-4">
+                                <div className="px-5 py-3 bg-white/5 border border-white/10 rounded-xl text-xs font-bold text-slate-300 uppercase tracking-widest whitespace-nowrap">ISO 9001</div>
+                                <div className="px-5 py-3 bg-white/5 border border-white/10 rounded-xl text-xs font-bold text-slate-300 uppercase tracking-widest whitespace-nowrap">ISO 27001</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 {/* HD Trust Banner */}

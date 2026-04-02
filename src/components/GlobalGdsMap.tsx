@@ -1,26 +1,39 @@
 "use client";
 
-import { Globe2 } from "lucide-react";
+import { Globe2, MapPin } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 
 export default function GlobalGdsMap() {
     const { lang } = useLanguage();
 
-    const regions = ["Hong Kong (Hub)", "United States (Hub)", "United Kingdom", "UAE", "Singapore", "Australia", "Japan", "South Korea", "Taiwan", "Malaysia", "Thailand", "Vietnam", "Indonesia"];
-    const gds = ["Sabre", "Amadeus", "Travelport", "TravelSky HK"];
-
+    const network = {
+        entities: lang === 'ZH' ? ["中国香港 (枢纽)", "美国 (枢纽)"] : ["Hong Kong, China (Hub)", "United States (Hub)"],
+        pos: lang === 'ZH' 
+            ? ["英国", "阿联酋", "新加坡", "澳大利亚", "日本", "韩国", "中国台湾", "马来西亚", "泰国", "越南", "印度尼西亚"]
+            : ["United Kingdom", "UAE", "Singapore", "Australia", "Japan", "South Korea", "Taiwan, China", "Malaysia", "Thailand", "Vietnam", "Indonesia"],
+        gds: ["Sabre", "Amadeus", "Travelport", "TravelSky HK"]
+    };
+    
     const text = {
         EN: {
-            title: "Global Supply Chain & GDS Matrix",
-            desc: "Directly contracted via top global distribution systems with local ticketing capabilities across 13 major regions.",
-            systems: "Integrated Systems",
-            regions: "13+ Localized Ticketing Regions"
+            title: "Global Supply & Fulfillment Network",
+            desc: "A coordinated multi-node infrastructure supporting global entities, localized POS ticketing, and cross-border settlement fulfillment.",
+            categories: {
+                entities: "Strategic Entities",
+                pos: "Market Support & POS",
+                fulfillment: "Fulfillment & Settlement",
+                systems: "Integrated GDS Matrix"
+            }
         },
         ZH: {
-            title: "全球供应链与 GDS 矩阵",
-            desc: "通过全球顶级分销系统直接签约，在全球 13 个主要大区提供本地化出票能力集。",
-            systems: "集成系统核心引擎",
-            regions: "13+ 主要本地化出票区域"
+            title: "全球资源与履约网络",
+            desc: "协同的多节点基础设施，支持全球业务主性、本地化 POS 出票及跨区域结算履约。",
+            categories: {
+                entities: "战略实体枢纽",
+                pos: "市场支撑与 POS 指标",
+                fulfillment: "履约与结算中心",
+                systems: "集成 GDS 矩阵"
+            }
         }
     };
     const t = text[lang];
@@ -44,42 +57,67 @@ export default function GlobalGdsMap() {
                     </p>
                 </div>
 
-                <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
-                    {/* GDS Platforms */}
-                    <div className="glass-card p-12 border-slate-200/60 shadow-xl relative overflow-hidden group">
-                        <div className="absolute top-0 right-0 w-40 h-40 bg-blue-600/5 blur-3xl -z-10 group-hover:bg-blue-600/10 transition-all duration-700" />
-                        <h3 className="text-2xl font-extrabold text-slate-900 mb-10 flex items-center gap-4">
-                            <div className="w-12 h-12 bg-blue-600/5 rounded-xl flex items-center justify-center">
-                                <Globe2 className="w-6 h-6 text-blue-600" />
+                <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-start">
+                    {/* Left Side: Entities & GDS */}
+                    <div className="space-y-12">
+                        <div className="glass-card p-10 border-slate-200/60 shadow-xl relative overflow-hidden group">
+                            <h3 className="text-xl font-extrabold text-slate-900 mb-8 flex items-center gap-3">
+                                <span className="w-1.5 h-6 bg-blue-600 rounded-full"></span>
+                                {t.categories.entities}
+                            </h3>
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                {network.entities.map((ent) => (
+                                    <div key={ent} className="bg-blue-50/50 p-6 rounded-2xl border border-blue-100 flex items-center gap-4 group-hover:bg-white transition-colors duration-500">
+                                        <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center shrink-0">
+                                            <MapPin className="w-5 h-5 text-white" />
+                                        </div>
+                                        <span className="font-bold text-slate-800">{ent}</span>
+                                    </div>
+                                ))}
                             </div>
-                            {t.systems}
-                        </h3>
-                        <div className="grid grid-cols-2 gap-6">
-                            {gds.map((system) => (
-                                <div key={system} className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex items-center justify-center h-28 text-xl font-black text-slate-800 text-center hover:border-blue-600/30 hover:shadow-lg transition-all duration-300">
-                                    {system}
-                                </div>
-                            ))}
+                        </div>
+
+                        <div className="glass-card p-10 border-slate-200/60 shadow-xl relative overflow-hidden group">
+                            <h3 className="text-xl font-extrabold text-slate-900 mb-8 flex items-center gap-3">
+                                <span className="w-1.5 h-6 bg-emerald-500 rounded-full"></span>
+                                {t.categories.systems}
+                            </h3>
+                            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                                {network.gds.map((system) => (
+                                    <div key={system} className="bg-white p-4 rounded-xl border border-slate-100 shadow-sm flex items-center justify-center h-20 text-sm font-black text-slate-800 text-center hover:border-emerald-500/30 transition-all">
+                                        {system}
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     </div>
 
-                    {/* Regions List */}
-                    <div className="space-y-10">
-                        <h3 className="text-3xl font-extrabold text-slate-900 tracking-tight">{t.regions}</h3>
-                        <div className="flex flex-wrap gap-4">
-                            {regions.map((region, i) => (
+                    {/* Right Side: Market Support & POS */}
+                    <div className="glass-card p-10 border-slate-200/60 shadow-xl lg:h-full flex flex-col">
+                        <h3 className="text-xl font-extrabold text-slate-900 mb-8 flex items-center gap-3">
+                            <span className="w-1.5 h-6 bg-amber-500 rounded-full"></span>
+                            {t.categories.pos}
+                        </h3>
+                        <div className="flex flex-wrap gap-3 mb-10">
+                            {network.pos.map((region) => (
                                 <span
                                     key={region}
-                                    className={`px-6 py-3.5 rounded-2xl text-[15px] font-bold border transition-all duration-300 transform hover:scale-105 select-none ${i < 4 ? 'bg-[#0b2853] border-[#0b2853] text-white shadow-xl shadow-[#0b2853]/20' : 'bg-white text-slate-600 border-slate-100 shadow-sm hover:border-blue-600/30 hover:text-blue-600'}`}
+                                    className="px-5 py-2.5 rounded-xl text-sm font-bold bg-white text-slate-600 border border-slate-100 shadow-sm hover:border-amber-500/30 hover:text-amber-600 transition-all"
                                 >
                                     {region}
                                 </span>
                             ))}
                         </div>
-                        <div className="pt-8 border-t border-slate-200">
-                            <p className="text-slate-500 font-bold text-sm tracking-wide uppercase">
-                                {lang === 'ZH' ? '支持全天候 24/7 本地化服务' : '24/7 Localized Ticketing Support'}
-                            </p>
+                        <div className="mt-auto pt-8 border-t border-slate-100">
+                            <div className="flex items-center gap-4">
+                                <div className="w-12 h-12 bg-emerald-500/10 rounded-xl flex items-center justify-center">
+                                    <Globe2 className="w-6 h-6 text-emerald-600" />
+                                </div>
+                                <div>
+                                    <h4 className="text-slate-900 font-bold text-sm">{t.categories.fulfillment}</h4>
+                                    <p className="text-slate-500 text-xs font-medium">{lang === 'ZH' ? '支持 24/7 本地化结算与跨区域交付' : '24/7 Localized Settlement & Cross-Market Delivery'}</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

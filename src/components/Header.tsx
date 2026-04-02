@@ -22,19 +22,19 @@ export default function Header() {
     const text = {
         EN: { 
             serve: "Who We Serve", 
-            solutions: "Core Solutions", 
-            aviation: "Global Aviation", 
-            supply: "Supply Chain",
+            solutions: "Solutions", 
+            aviation: "Air Capability", 
+            supply: "Global Network",
             credentials: "Credentials", 
             contact: "Contact Us",
             login: "Agent Login"
         },
         ZH: { 
             serve: "我们服务谁", 
-            solutions: "核心解决方案", 
-            aviation: "航空动力", 
-            supply: "全球供应链",
-            credentials: "资质项目", 
+            solutions: "核心方案", 
+            aviation: "航空能力", 
+            supply: "全球网络",
+            credentials: "资质与实体", 
             contact: "联系合作",
             login: "代理系统登录" 
         }

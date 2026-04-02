@@ -10,28 +10,28 @@ export default function Footer() {
         EN: {
             title: "On The Way Overseas",
             subtitle: "Global Travel Resource Allocation Platform",
-            desc: "Connecting global air, hotel, group travel and ground mobility resources for TMCs, OTAs and enterprise partners.",
+            desc: "Connecting global air, hotel, group travel and ground mobility resources with multi-market fulfillment for TMCs, OTAs and enterprise partners.",
             contactTitle: "Business Inquiries",
             email: "sales@ontheway.net",
-            entityTitle: "Entities",
+            entityTitle: "Strategic Entities",
             entities: [
-                "On The Way (Hong Kong) Travel Limited",
-                "On The Road Inc."
+                "On The Way (Hong Kong) Travel Limited (Hong Kong, China)",
+                "On The Road Inc. (United States)"
             ],
             copy: `© 2026 On The Way Overseas. All rights reserved.`
         },
         ZH: {
             title: "在路上海外",
             subtitle: "全球旅行资源配置平台",
-            desc: "连接全球机票、酒店、团队出行与地面交通资源，服务 TMC、OTA 与企业差旅合作伙伴。",
+            desc: "整合全球机票、酒店、团队出行与地面交通资源，依托双实体中心为 TMC、OTA 与企业伙伴提供多地化履约支撑。",
             contactTitle: "商务合作",
             email: "sales@ontheway.net",
-            entityTitle: "实体",
+            entityTitle: "战略经营实体",
             entities: [
-                "On The Way (Hong Kong) Travel Limited",
-                "On The Road Inc."
+                "在路上 (香港) 旅游有限公司 (中国香港)",
+                "On The Road Inc. (美国)"
             ],
-            copy: `© 2026 On The Way Overseas. All rights reserved.`
+            copy: `© 2026 在路上海外 (On The Way Overseas). 保留所有权利。`
         }
     };
     

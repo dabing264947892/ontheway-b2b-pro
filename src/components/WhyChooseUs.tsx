@@ -8,27 +8,29 @@ export default function WhyChooseUs() {
 
     const text = {
         EN: {
-            title: "Strategic Advantage",
-            intro: "As the global strategic hub of Tengxuan Travel Group, we go beyond simple resource access to provide a comprehensive B2B infrastructure built on stability, compliance, and trust.",
+            title: "Why Partners Choose Us",
+            intro: "As a global travel resource allocation platform, we provide more than just inventory. We deliver a comprehensive B2B infrastructure that combines dual-entity stability with global fulfillment expertise.",
             cards: [
-                { title: "Group-Level Resource Synergy", copy: "Backed by Tengxuan Group's extensive global procurement network", icon: Layers, color: "blue" },
-                { title: "Operational Excellence", copy: "24/7 dedicated service with high-standard SLA commitments", icon: Activity, color: "emerald" },
-                { title: "Global Compliance Hub", copy: "Navigating local regulations and financial standards across markets", icon: ShieldAlert, color: "amber" },
-                { title: "Multi-Market Entities", copy: "Strategic presence in HK, USA, and beyond for seamless settlement", icon: Map, color: "purple" },
-                { title: "Strategic TMC Focus", copy: "Tailored for the complex needs of modern TMCs and OTAs", icon: HeartHandshake, color: "red" },
-                { title: "Scalable Infrastructure", copy: "Enterprise-grade stability with 99.9% recorded uptime", icon: SmartphoneNfc, color: "cyan" }
+                { title: "Dual-Entity Compliance", copy: "Strategic entities in Hong Kong, China and the U.S. for cross-border financial and operational stability", icon: ShieldAlert, color: "blue" },
+                { title: "Global Air Distribution", copy: "Multi-market ticketing capability with direct GDS, NDC, and LCC content aggregation", icon: Layers, color: "emerald" },
+                { title: "Hotel & Accommodation", copy: "Extensive global hotel supply network with competitive B2B rates and fulfillment", icon: Activity, color: "amber" },
+                { title: "Group Travel & MICE", copy: "Professional support for complex meetings, incentives, conferences, and exhibitions", icon: HeartHandshake, color: "purple" },
+                { title: "Ground Mobility", copy: "Coordinated airport transfers, chauffeured services, and local transportation solutions", icon: Map, color: "red" },
+                { title: "Digital Connectivity", copy: "Scalable API integration, system cooperation models, and digital transformation support", icon: SmartphoneNfc, color: "cyan" },
+                { title: "24/7 Bilingual Support", copy: "Round-the-clock operational coordination and fulfillment support in English and Chinese", icon: Activity, color: "blue" }
             ]
         },
         ZH: {
-            title: "为什么选择在路上 Overseas",
-            intro: "作为腾轩旅游集团布局全球的战略枢纽，我们不仅提供资源接入，更通过集团化的底座支撑，为您提供稳定、合规且具规模效应的全球化服务。",
+            title: "为什么合作伙伴选择我们",
+            intro: "作为全球旅行资源配置平台，我们不仅提供资源，更通过“美港双引擎”的合规架构与全球履约能力，为您构建稳固的 B2B 合作基石。",
             cards: [
-                { title: "集团化资源协同", copy: "依托腾轩旅游集团深厚的全球大交通与酒店采购网络", icon: Layers, color: "blue" },
-                { title: "卓越运营体系", copy: "具备高标准的 SLA 交付与 24/7 全天候专业服务保障", icon: Activity, color: "emerald" },
-                { title: "全球合规与风控", copy: "深度理解国际业务合规需求，规避贸易与税务风险", icon: ShieldAlert, color: "amber" },
-                { title: "跨区域实体支撑", copy: "在香港、美国等地拥有成熟业务实体，支持本地化结算", icon: Map, color: "purple" },
-                { title: "深耕 B2B 场景", copy: "专为 TMC、OTA 及大型企业设计的全球差旅分销基建", icon: HeartHandshake, color: "red" },
-                { title: "高并发系统稳定性", copy: "企业级高可用架构，确保业务在峰值时段依然稳定运行", icon: SmartphoneNfc, color: "cyan" }
+                { title: "双实体合规支撑", copy: "在中国香港与美国拥有持牌实体，保障跨境资金结算与业务合规", icon: ShieldAlert, color: "blue" },
+                { title: "全球机票分销", copy: "具备多地本地化出票能力，直连 GDS、NDC 及 LCC 全球内容矩阵", icon: Layers, color: "emerald" },
+                { title: "酒店与住宿供应", copy: "覆盖全球的酒店供应网络，提供极具竞争力的 B2B 净价与履约保障", icon: Activity, color: "amber" },
+                { title: "团队出行与 MICE", copy: "为商务考察、会议、奖励旅游等复杂需求提供全流程专业支持", icon: HeartHandshake, color: "purple" },
+                { title: "地面交通与接送机", copy: "提供全球主要城市的机场接送、地面出行及本地化客运解决方案", icon: Map, color: "red" },
+                { title: "数字化连接与 API", copy: "成熟的 API 接入、系统协同模式及数字化差旅管理工具支持", icon: SmartphoneNfc, color: "cyan" },
+                { title: "24/7 双语运营支持", copy: "全天候不间断的中英双语业务协同，确保全球履约无忧", icon: Activity, color: "blue" }
             ]
         }
     };

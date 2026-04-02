@@ -10,9 +10,9 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "OnTheWay B2B - Global Travel Resources Core Platform",
+  title: "OnTheWay B2B - Global Travel Resource Allocation Platform",
   description: "Global B2B travel resources platform for TMCs, OTAs, and corporations. Direct access to GDS, NDC, LCC APIs, global flight ticketing, accommodations, and mobility solutions.",
-  keywords: "GDS, NDC, LCC API, Global TMC, Business Travel, Hong Kong IATA Agency, Sabre, Amadeus, Travelport, TravelSky",
+  keywords: "GDS, NDC, LCC API, Global TMC, Business Travel, Hong Kong, China, Taiwan, China, IATA Agency, Sabre, Amadeus, Travelport, TravelSky",
 };
 
 export default function RootLayout({

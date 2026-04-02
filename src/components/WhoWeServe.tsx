@@ -10,31 +10,31 @@ export default function WhoWeServe() {
     const text = {
         EN: {
             title: "Who We Serve",
-            desc: "We support a broad range of B2B travel partners across distribution, managed travel and group travel scenarios.",
+            desc: "We provide tailored resource allocation and fulfillment support for a wide range of B2B travel partners, ensuring scalable growth across global markets.",
             cards: [
-                { title: "TMCs", copy: "Broader supply access and fulfillment support", icon: Building2 },
-                { title: "OTAs", copy: "Global content expansion and system connectivity", icon: Globe },
-                { title: "Travel Wholesalers", copy: "Flexible cooperation across supply scenarios", icon: Boxes },
-                { title: "Enterprise Travel Partners", copy: "Stable travel resources and management support", icon: Building },
-                { title: "Group Travel & MICE Operators", copy: "Support for meetings, delegations and incentive travel", icon: Presentation }
+                { title: "TMCs", copy: "Enhance your managed travel offerings with broader air/hotel supply and 24/7 cross-border fulfillment coordination.", icon: Building2 },
+                { title: "OTAs & Platforms", copy: "Scale your global content via high-performance APIs and robust multi-source aggregation architecture.", icon: Globe },
+                { title: "Wholesalers & Consolidators", copy: "Optimize your distribution via multi-market ticketing flexibility and hybrid fulfillment support models.", icon: Boxes },
+                { title: "Enterprise & Project Travel", copy: "Ensure stability for large-scale projects and corporate travel with high-standard SLA and dedicated resource management.", icon: Building },
+                { title: "Group & MICE Partners", copy: "Execute complex conferences, incentive travel, and delegations with specialized ground mobility and group booking support.", icon: Presentation }
             ],
-            bannerTitle: "A Trusted Infrastructure for Global B2B Partners",
-            bannerDesc: "Join hundreds of TMCs, OTAs and enterprise partners who rely on our global distribution capabilities.",
-            bannerCta: "Become a Partner"
+            bannerTitle: "A Trusted Partner for Global Travel Growth",
+            bannerDesc: "Join hundreds of TMCs and OTAs who rely on our global resource allocation and multi-market fulfillment capabilities.",
+            bannerCta: "Connect With Our Team"
         },
         ZH: {
             title: "我们服务谁",
-            desc: "聚焦国际旅行分销、企业差旅与团队出行合作场景，为不同类型客户提供资源接入、业务协同与履约支持。",
+            desc: "为多元化的 B2B 合作伙伴提供定制化的资源配置与履约支持，助力全球业务在不同市场环境下稳健增长。",
             cards: [
-                { title: "差旅管理公司 TMC", copy: "提供更丰富的资源能力与履约协同支持", icon: Building2 },
-                { title: "OTA 在线旅游平台", copy: "支持全球资源拓展与系统连接", icon: Globe },
-                { title: "批发商与资源合作伙伴", copy: "支持多类型分销合作场景", icon: Boxes },
-                { title: "企业差旅合作伙伴", copy: "支持更稳定的出行资源与管理能力", icon: Building },
-                { title: "团队与 MICE 服务商", copy: "适配商务考察、会议、奖励旅游等需求", icon: Presentation }
+                { title: "差旅管理公司 TMC", copy: "通过更广泛的机酒供应与 24/7 跨境履约协同，提升企业差旅服务竞争力。", icon: Building2 },
+                { title: "OTA 与在线旅游平台", copy: "依托高性能 API 与多源聚合架构，快速拓展全球内容覆盖，降低系统构建成本。", icon: Globe },
+                { title: "批发商与资源整合商", copy: "凭借多地出票灵活性与混合履约支持模式，优化分销效率与库存流通性。", icon: Boxes },
+                { title: "大型企业与项目差旅", copy: "为大型项目与企业差旅提供高标准 SLA 交付与稳定的全球资源管理保障。", icon: Building },
+                { title: "团队出行与 MICE 服务商", copy: "为会议、奖励旅游与大型代表团提供定制化的地面交通与机酒团队预订方案。", icon: Presentation }
             ],
-            bannerTitle: "值得信赖的全球 B2B 伙伴合作基础设施",
-            bannerDesc: "数百家 TMC、OTA 与企业合作伙伴，正依托我们的全球分销能力稳步增长。",
-            bannerCta: "申请合作"
+            bannerTitle: "全球业务增长的信赖伙伴",
+            bannerDesc: "数百家 TMC 与 OTA 正在依托我们的全球资源配置与多地履约能力，实现业务的稳健扩张。",
+            bannerCta: "立即联系团队"
         }
     };
 
