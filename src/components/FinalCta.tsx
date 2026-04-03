@@ -9,7 +9,7 @@ export default function FinalCta() {
     const text = {
         EN: {
             title: "Let's Explore a Partnership Together",
-            desc: "If you are looking for reliable global travel resources, scaleable fulfillment models and strong digital connectivity, we'd be glad to discuss a cooperation that fits your business needs.",
+            desc: "If you are looking for reliable global travel resources, scalable fulfillment models and strong digital connectivity, we'd be glad to discuss a cooperation that fits your business needs.",
             btn1: "Start a Cooperation Discussion",
             btn2: "Talk to Our Partnership Team"
         },

@@ -11,7 +11,7 @@ export default function GlobalGdsMap() {
         pos: lang === 'ZH' 
             ? ["英国", "阿联酋", "新加坡", "澳大利亚", "日本", "韩国", "中国台湾", "马来西亚", "泰国", "越南", "印度尼西亚"]
             : ["United Kingdom", "UAE", "Singapore", "Australia", "Japan", "South Korea", "Taiwan, China", "Malaysia", "Thailand", "Vietnam", "Indonesia"],
-        gds: ["Sabre", "Amadeus", "Travelport", "TravelSky HK"]
+        gds: ["Sabre", "Amadeus", "Travelport", "TravelSky"]
     };
     
     const text = {
@@ -98,14 +98,15 @@ export default function GlobalGdsMap() {
                             <span className="w-1.5 h-6 bg-amber-500 rounded-full"></span>
                             {t.categories.pos}
                         </h3>
-                        <div className="flex flex-wrap gap-3 mb-10">
+                        <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-10">
                             {network.pos.map((region) => (
-                                <span
+                                <div
                                     key={region}
-                                    className="px-5 py-2.5 rounded-xl text-sm font-bold bg-white text-slate-600 border border-slate-100 shadow-sm hover:border-amber-500/30 hover:text-amber-600 transition-all"
+                                    className="px-4 py-3 rounded-xl text-sm font-bold bg-white text-slate-700 border border-slate-100 shadow-sm flex items-center gap-2 hover:border-amber-500/30 hover:text-amber-600 transition-all group"
                                 >
+                                    <div className="w-1.5 h-1.5 rounded-full bg-amber-400 opacity-60 group-hover:opacity-100 transition-opacity"></div>
                                     {region}
-                                </span>
+                                </div>
                             ))}
                         </div>
                         <div className="mt-auto pt-8 border-t border-slate-100">

@@ -124,14 +124,29 @@ export default function CooperationModels() {
                         );
                     })}
                     
-                    {/* Final CTA Card */}
-                    <div className="bg-[#0b2853] p-8 md:p-10 rounded-[2.5rem] shadow-xl flex flex-col justify-center items-center text-center group cursor-pointer relative overflow-hidden transition-all hover:scale-[1.02]" onClick={() => window.location.hash = '#contact'}>
-                        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(56,189,248,0.15),transparent)] pointer-events-none" />
-                        <h3 className="text-2xl font-bold text-white mb-4 relative z-10">{lang === 'ZH' ? '开启您的 B2B 增长之旅' : 'Ready to Start?'}</h3>
-                        <p className="text-blue-200/70 font-medium mb-8 text-sm relative z-10">{lang === 'ZH' ? '与我们的专家团队探讨最适合您的合作方案' : 'Connect with our team to find the best model for your business.'}</p>
-                        <div className="px-8 py-3.5 bg-white text-[#0b2853] font-bold rounded-xl flex items-center gap-2 group-hover:gap-4 transition-all relative z-10">
+                    {/* Final CTA Card - Now Integrated */}
+                    <div 
+                        className="bg-white border-2 border-blue-600/10 p-8 md:p-10 rounded-[2.5rem] shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center relative overflow-hidden group cursor-pointer"
+                        onClick={() => window.location.hash = '#contact'}
+                    >
+                        {/* Subtle background decoration */}
+                        <div className="absolute top-0 right-0 w-32 h-32 bg-blue-50 rounded-full blur-3xl -z-0 opacity-50 group-hover:opacity-100 transition-opacity" />
+                        
+                        <div className="w-14 h-14 bg-blue-600 rounded-2xl flex items-center justify-center mb-8 relative z-10 shadow-lg shadow-blue-600/20">
+                            <ArrowRight className="w-7 h-7 text-white" />
+                        </div>
+                        
+                        <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-4 relative z-10">
+                            {lang === 'ZH' ? '开启您的 B2B 增长之旅' : 'Ready to Start?'}
+                        </h3>
+                        
+                        <p className="text-slate-500 font-medium leading-relaxed text-sm mb-8 flex-1 relative z-10">
+                            {lang === 'ZH' ? '与我们的专家团队探讨最适合您的合作方案' : 'Connect with our team to find the best model for your business.'}
+                        </p>
+                        
+                        <div className="w-full px-8 py-3.5 bg-[#0b2853] text-white font-bold rounded-xl flex items-center justify-center gap-2 group-hover:gap-4 transition-all relative z-10 shadow-lg shadow-[#0b2853]/10">
                             {t.cta}
-                            <ArrowRight className="w-5 h-5" />
+                            <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
                         </div>
                     </div>
                 </div>

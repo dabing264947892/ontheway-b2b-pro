@@ -3,18 +3,22 @@
 import { useLanguage } from "@/context/LanguageContext";
 import Image from "next/image";
 
-const brandGraphic = "/images/brand_intro_v2.png";
+const brandGraphic = "/images/brand_intro_v5.png";
 
 export default function BrandIntro() {
     const { lang } = useLanguage();
     const text = {
         EN: {
             title: "Executive Summary",
-            copy: "Backed by the strategic foundation and industry resources of Tengxuan Travel Group, On The Way Overseas serves as the group’s global travel resource and international cooperation platform, connecting air, hotel, group travel, mobility and digital capabilities for TMCs, OTAs, wholesalers and enterprise partners."
+            copy: "Backed by the strategic foundation and industry resources of Tengxuan Travel Group, On The Way Overseas serves as the group’s global travel resource and international cooperation platform, connecting air, hotel, group travel, mobility and digital capabilities for TMCs, OTAs, wholesalers and enterprise partners.",
+            platform: "GLOBAL TRAVEL RESOURCE PLATFORM",
+            categories: "AIR • HOTEL • GROUP • MOBILITY • DIGITAL"
         },
         ZH: {
             title: "品牌简介",
-            copy: "依托腾轩旅游集团的战略基石与行业资源，在路上海外（On The Way Overseas）作为集团的全球旅行资源与国际合作平台，为 TMC、OTA、批发商及企业合作伙伴提供机票、酒店、团队出行、地面交通及数字化能力的深度连接与赋能。"
+            copy: "依托腾轩旅游集团的战略基石与行业资源，在路上海外（On The Way Overseas）作为集团的全球旅行资源与国际合作平台，为 TMC、OTA、批发商及企业合作伙伴提供机票、酒店、团队出行、地面交通及数字化能力的深度连接与赋能。",
+            platform: "全球旅行资源配置平台",
+            categories: "机票 • 酒店 • 团队 • 交通 • 数字化"
         }
     };
     const t = text[lang];
@@ -25,16 +29,17 @@ export default function BrandIntro() {
                 <div className="flex flex-col lg:flex-row items-center gap-16">
                     <div className="lg:w-1/2 order-2 lg:order-1 relative">
                         {/* Image wrapper with subtle styling */}
-                        <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-[#0b2853]/10 border border-slate-100 bg-slate-50 group">
+                        <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-[#0b2853]/10 border border-slate-100 bg-slate-50 group aspect-square">
                             <Image 
                                 src={brandGraphic} 
                                 alt="Brand Overview Graphic" 
-                                width={800}
-                                height={600}
-                                className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700" 
+                                width={1024}
+                                height={1024}
+                                className="w-full h-full object-contain transform group-hover:scale-[1.02] transition-transform duration-1000 p-1" 
                                 unoptimized
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-[#0b2853]/5 to-transparent pointer-events-none" />
+                            
+                            <div className="absolute inset-0 bg-gradient-to-t from-[#0b2853]/10 to-transparent pointer-events-none" />
                         </div>
                         {/* Floating tech accents */}
                         <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-emerald-400/10 rounded-full blur-2xl -z-10" />
