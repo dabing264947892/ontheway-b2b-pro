@@ -10,9 +10,43 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "OnTheWay B2B - Global Travel Resource Allocation Platform",
-  description: "Global B2B travel resources platform for TMCs, OTAs, and corporations. Direct access to GDS, NDC, LCC APIs, global flight ticketing, accommodations, and mobility solutions.",
+  metadataBase: new URL("https://dabing264947892.github.io/ontheway-b2b-pro/"),
+  title: "On The Way Overseas | Global Travel Resource Allocation Platform",
+  description: "A global B2B travel resource platform connecting air, hotel, group travel, mobility and digital capabilities for TMCs, OTAs, wholesalers and enterprise partners.",
   keywords: "GDS, NDC, LCC API, Global TMC, Business Travel, Hong Kong, China, Taiwan, China, IATA Agency, Sabre, Amadeus, Travelport, TravelSky",
+  openGraph: {
+    title: "On The Way Overseas | Global Travel Resource Allocation Platform",
+    description: "A global B2B travel resource platform connecting air, hotel, group travel, mobility and digital capabilities for TMCs, OTAs, wholesalers and enterprise partners.",
+    url: "https://dabing264947892.github.io/ontheway-b2b-pro/",
+    siteName: "On The Way Overseas",
+    images: [
+      {
+        url: "/images/wechat-preview.png",
+        width: 1024,
+        height: 1024,
+        alt: "On The Way Overseas Global Travel Resource Allocation Platform (Square Thumbnail)",
+      },
+      {
+        url: "/images/social-preview.png",
+        width: 1200,
+        height: 630,
+        alt: "On The Way Overseas Global Travel Resource Allocation Platform (Rectangular Thumbnail)",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "On The Way Overseas | Global Travel Resource Allocation Platform",
+    description: "A global B2B travel resource platform connecting air, hotel, group travel, mobility and digital capabilities for TMCs, OTAs, wholesalers and enterprise partners.",
+    images: ["/images/social-preview.png"],
+  },
+  other: {
+    "itemprop:name": "On The Way Overseas | Global Travel Resource Allocation Platform",
+    "itemprop:description": "A global B2B travel resource platform connecting air, hotel, group travel, mobility and digital capabilities for TMCs, OTAs, wholesalers and enterprise partners.",
+    "itemprop:image": "https://dabing264947892.github.io/ontheway-b2b-pro/images/wechat-preview.png",
+  },
 };
 
 export default function RootLayout({
