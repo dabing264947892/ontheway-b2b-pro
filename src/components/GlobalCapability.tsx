@@ -13,7 +13,7 @@ export default function GlobalCapability() {
             copy: "We provide a scalable B2B travel resource coordination platform, focusing on high-performance air distribution, multi-market fulfillment, and seamless digital coordination across global hubs.",
             points: [
                 { title: "Multi-Market Ticketing", desc: "Access broader fare options and routing via multi-market ticketing flexibility and localized POS support.", icon: Globe2 },
-                { title: "Fulfillment Coordination", desc: "Strong cross-border settlement and 24/7 bilingual operational support through our HK and U.S. entities.", icon: Briefcase },
+                { title: "Fulfillment Coordination", desc: "Strong cross-border settlement and 24/7 bilingual operational support through our Hong Kong, China and U.S. entities.", icon: Briefcase },
                 { title: "Complex Itinerary Support", desc: "Expert handling of international, multi-city, and non-standard travel needs including group bookings.", icon: Link2 },
                 { title: "Direct Resource Access", desc: "Aggregated content from GDS, NDC, and LCCs integrated with group-level sourcing synergy.", icon: Network }
             ]
