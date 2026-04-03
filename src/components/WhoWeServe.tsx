@@ -44,7 +44,7 @@ export default function WhoWeServe() {
         <section id="who-we-serve" className="section-padding relative overflow-hidden bg-slate-900">
             {/* High-res skyscraper background */}
             <Image
-                src="/ontheway-b2b-pro/images/who_we_serve_bg.png"
+                src="/images/who_we_serve_bg.png"
                 alt="Corporate Skyscraper Background"
                 fill
                 className="object-cover opacity-25 mix-blend-soft-light -z-10 scale-110"

@@ -70,7 +70,7 @@ export default function Credentials() {
         <section id="credentials" className="section-padding relative overflow-hidden bg-[#06152B]">
             {/* Professional dark-themed background */}
             <Image
-                src="/ontheway-b2b-pro/images/credentials_bg.png"
+                src="/images/credentials_bg.png"
                 alt="Credentials Background"
                 fill
                 className="object-cover opacity-15 pointer-events-none"

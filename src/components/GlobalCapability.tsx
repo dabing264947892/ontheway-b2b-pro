@@ -36,7 +36,7 @@ export default function GlobalCapability() {
         <section id="global-capability" className="py-24 bg-[#06152b] overflow-hidden relative" style={{ position: 'relative' }}>
             {/* New high-res global network image as full background */}
             <Image
-                src="/ontheway-b2b-pro/images/global_network_coverage.png"
+                src="/images/global_network_coverage.png"
                 alt="Global Network Visualization"
                 fill
                 className="object-cover opacity-40 pointer-events-none"

@@ -3,7 +3,7 @@
 import { useLanguage } from "@/context/LanguageContext";
 import Image from "next/image";
 
-const brandGraphic = "/ontheway-b2b-pro/images/brand_intro_v2.png";
+const brandGraphic = "/images/brand_intro_v2.png";
 
 export default function BrandIntro() {
     const { lang } = useLanguage();

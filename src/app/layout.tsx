@@ -10,14 +10,14 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://dabing264947892.github.io/ontheway-b2b-pro/"),
+  metadataBase: new URL("https://ontheway.net/"),
   title: "On The Way Overseas | Global Travel Resource Allocation Platform",
   description: "A global B2B travel resource platform connecting air, hotel, group travel, mobility and digital capabilities for TMCs, OTAs, wholesalers and enterprise partners.",
   keywords: "GDS, NDC, LCC API, Global TMC, Business Travel, Hong Kong, China, Taiwan, China, IATA Agency, Sabre, Amadeus, Travelport, TravelSky",
   openGraph: {
     title: "On The Way Overseas | Global Travel Resource Allocation Platform",
     description: "A global B2B travel resource platform connecting air, hotel, group travel, mobility and digital capabilities for TMCs, OTAs, wholesalers and enterprise partners.",
-    url: "https://dabing264947892.github.io/ontheway-b2b-pro/",
+    url: "https://ontheway.net/",
     siteName: "On The Way Overseas",
     images: [
       {
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   other: {
     "itemprop:name": "On The Way Overseas | Global Travel Resource Allocation Platform",
     "itemprop:description": "A global B2B travel resource platform connecting air, hotel, group travel, mobility and digital capabilities for TMCs, OTAs, wholesalers and enterprise partners.",
-    "itemprop:image": "https://dabing264947892.github.io/ontheway-b2b-pro/images/wechat-preview.png",
+    "itemprop:image": "https://ontheway.net/images/wechat-preview.png",
   },
 };
 

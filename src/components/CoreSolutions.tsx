@@ -5,11 +5,11 @@ import { Plane, Bed, UsersRound, Car, CodeSquare, CheckCircle2 } from "lucide-re
 import Image from "next/image";
 
 const cardVisuals = [
-    "/ontheway-b2b-pro/images/tech_aviation_v2.png",
-    "/ontheway-b2b-pro/images/tech_hotel_v2.png",
-    "/ontheway-b2b-pro/images/group_mice_bg.png",
-    "/ontheway-b2b-pro/images/ground_transport_bg.png",
-    "/ontheway-b2b-pro/images/digital_system_bg.png",
+    "/images/tech_aviation_v2.png",
+    "/images/tech_hotel_v2.png",
+    "/images/group_mice_bg.png",
+    "/images/ground_transport_bg.png",
+    "/images/digital_system_bg.png",
 ];
 
 export default function CoreSolutions() {
@@ -116,7 +116,7 @@ export default function CoreSolutions() {
             <div
                 className="absolute inset-0 pointer-events-none opacity-[0.035]"
                 style={{
-                    backgroundImage: `url('/ontheway-b2b-pro/images/solutions_tech_dashboard.png')`,
+                    backgroundImage: `url('/images/solutions_tech_dashboard.png')`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                 }}

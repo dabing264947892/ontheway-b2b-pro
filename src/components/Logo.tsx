@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Logo({ className }: { className?: string }) {
     return (
         <Image
-            src="/ontheway-b2b-pro/images/logo_transparent.png"
+            src="/images/logo_transparent.png"
             alt="On The Way Logo"
             width={320}
             height={320}
